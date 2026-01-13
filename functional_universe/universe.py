@@ -181,8 +181,12 @@ class Universe:
         
         Returns:
             Total entropy.
+        
+        Note:
+            All transitions added to the universe must have entropy set
+            (defaults to minimum_entropy if not specified during validation).
         """
-        return sum(t.entropy or 0 for t in transitions)
+        return sum(t.entropy for t in transitions)
     
     def is_causal_rate_valid(self, transitions: List[Transition]) -> bool:
         """

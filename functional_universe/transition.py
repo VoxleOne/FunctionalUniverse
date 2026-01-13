@@ -102,12 +102,12 @@ class Transition:
         
         # The composition should not exceed the causal bound
         # In terms of duration, we need: duration >= (number_of_transitions / max_rate)
-        # For 2 transitions: duration >= 2 / max_rate
-        min_allowed_duration = 2 * constants.dt_min
+        # For 2 transitions: duration >= 2 / max_rate = 2 * dt_min / c
+        min_allowed_duration = 2.0 / max_rate
         
         if composed_duration < min_allowed_duration:
             raise ValueError(
-                f"Composition would violate minimum duration: "
+                f"Composition would violate causal rate bound: "
                 f"{composed_duration} < {min_allowed_duration}"
             )
         
