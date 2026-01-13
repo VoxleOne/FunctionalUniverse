@@ -10,7 +10,7 @@ $$
 f_0, \quad f_1 = T(f_0), \quad f_2 = T(f_1), \quad \dots
 $$
 
-where \(T(f_n)\) is a **successor function** generating the next state.  
+where $$(T(f_n)\) is a **successor function** generating the next state.  
 
 - Each state \(f_n\) encodes the physical properties of the universe at that stage.  
 - Observables are functions of the state: \(\mathcal{O}_n = \mathcal{O}(f_n)\).  
@@ -125,4 +125,12 @@ $$
 3. Each transition has a **finite duration \(d\tau\)**, giving rise to emergent **proper time**.  
 4. Discrete functional evolution reproduces **real cosmological observables**, like the cooling of the CMB.  
 5. **Time dilation** and **spacetime geometry** naturally emerge from **transition counting** and compositional structure.
+
+---
+
+## References
+
+1. Margolus, N., & Levitin, L. B. "The maximum speed of dynamical evolution." *Physica D*, 1998.  
+2. Peebles, P. J. E. *Principles of Physical Cosmology*, 1993.  
+3. Sorkin, R. "Causal sets: Discrete gravity," 2003.  
 
