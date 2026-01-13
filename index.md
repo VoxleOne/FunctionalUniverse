@@ -1,7 +1,7 @@
 ---
 title: Test Page
 ---
-
+{% raw %}
 <script type="text/javascript">
 window.MathJax = {
   tex: {
@@ -20,6 +20,7 @@ window.MathJax = {
 </script>
 
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+{% endraw %}
 
 # Welcome to My Page
 
