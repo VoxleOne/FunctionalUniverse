@@ -1,3 +1,9 @@
+
+<!-- Load MathJax -->
+<script type="text/javascript" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
 # The Universe as a Compositional Sequence of States
 
 Modeling the cosmos as a sequence of functional states.
