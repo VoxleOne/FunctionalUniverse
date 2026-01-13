@@ -10,7 +10,13 @@ $$
 f_0, \quad f_1 = T(f_0), \quad f_2 = T(f_1), \quad \dots
 $$
 
-where $$(T(f_n)\) is a **successor function** generating the next state.  
+where 
+
+$$
+T(f_n)\)
+$$
+
+is a **successor function** generating the next state.  
 
 - Each state \(f_n\) encodes the physical properties of the universe at that stage.  
 - Observables are functions of the state: \(\mathcal{O}_n = \mathcal{O}(f_n)\).  
