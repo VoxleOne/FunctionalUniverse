@@ -246,11 +246,9 @@ class TestUniverse(unittest.TestCase):
         ]
         self.assertTrue(self.universe.is_causal_rate_valid(transitions))
     
-    def test_causal_rate_at_limit(self):
-        """Test causal rate at the limit (Axiom 5)."""
+    def test_causal_rate_within_bounds(self):
+        """Test causal rate well within bounds (Axiom 5)."""
         # With dt_min=1.0, c=10.0: max_rate = 10.0 transitions/time
-        # To test at the limit: 10 transitions in 1.0 time = 10.0 rate (at limit)
-        # But each transition needs dt_min=1.0, so we use very small duration
         # Create 10 transitions with minimum duration = 10.0 total
         # Rate = 10 / 10.0 = 1.0, which is well below max_rate of 10.0
         transitions = [

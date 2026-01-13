@@ -177,16 +177,26 @@ class Universe:
         Calculate total entropy for a sequence of transitions (Axiom 3).
         
         Args:
-            transitions: List of transitions.
+            transitions: List of transitions. All transitions should be validated
+                        (have non-None entropy values).
         
         Returns:
             Total entropy.
         
+        Raises:
+            TypeError: If any transition has None entropy (not validated).
+        
         Note:
-            All transitions added to the universe must have entropy set
-            (defaults to minimum_entropy if not specified during validation).
+            All transitions added to the universe via add_transition() are
+            automatically validated and will have entropy set.
         """
-        return sum(t.entropy for t in transitions)
+        try:
+            return sum(t.entropy for t in transitions)
+        except TypeError:
+            raise TypeError(
+                "Cannot calculate total entropy: one or more transitions have "
+                "None entropy. Ensure all transitions are validated first."
+            )
     
     def is_causal_rate_valid(self, transitions: List[Transition]) -> bool:
         """

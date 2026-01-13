@@ -156,12 +156,18 @@ class Transition:
         """
         Validate this transition against universe constants.
         
+        Sets entropy to minimum_entropy if not specified, then validates all constraints.
+        
         Args:
             constants: UniverseConstants to validate against.
         
         Raises:
             ValueError: If transition violates any axioms.
         """
+        # If no entropy specified, set to minimum (Axiom 3)
+        if self._entropy is None:
+            self._entropy = constants.minimum_entropy
+        
         # Axiom 2: Check minimum duration
         if self._duration < constants.dt_min:
             raise ValueError(
@@ -170,15 +176,11 @@ class Transition:
             )
         
         # Axiom 3: Check minimum entropy
-        if self._entropy is not None and self._entropy < constants.minimum_entropy:
+        if self._entropy < constants.minimum_entropy:
             raise ValueError(
                 f"Transition entropy {self._entropy} is less than "
                 f"minimum entropy {constants.minimum_entropy} (Axiom 3)"
             )
-        
-        # If no entropy specified, use minimum
-        if self._entropy is None:
-            self._entropy = constants.minimum_entropy
     
     def __repr__(self):
         return (f"Transition(name='{self._name}', duration={self._duration}, "
