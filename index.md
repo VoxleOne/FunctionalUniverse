@@ -8,15 +8,18 @@ window.MathJax = {
     inlineMath: [['$', '$'], ['\\(', '\\)']],
     displayMath: [['$$', '$$'], ['\\[', '\\]']]
   },
-  svg: {
-    fontCache: 'global'
+  svg: { fontCache: 'global' },
+  startup: {
+    pageReady: () => {
+      return MathJax.startup.defaultPageReady().then(() => {
+        MathJax.typesetPromise(); // ensure all math is rendered
+      });
+    }
   }
 };
 </script>
 
-<script type="text/javascript" async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
-</script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
 
 # Welcome to My Page
 
@@ -27,3 +30,4 @@ And a display equation:
 $$
 \int_0^\infty e^{-x} dx = 1
 $$
+
