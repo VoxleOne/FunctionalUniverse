@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Functional Universe</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- MathJax configuration -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$']],
+        displayMath: [['$$', '$$']]
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
+  </script>
+
+  <!-- MathJax loader -->
+  <script defer
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+  </script>
+
+  <style>
+    body {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      font-family: serif;
+      line-height: 1.6;
+    }
+
+    h1, h2 {
+      font-family: sans-serif;
+    }
+
+    math {
+      font-size: 1em;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Functional Universe</h1>
+
+  <p>
+    We consider a sequence of states $(f_n)$ and define a successor function
+    $T(f_n)$ generating the next state.
+  </p>
+
+  <p>
+    Formally, the evolution operator is given by
+    $\mathcal{O}_n = \mathcal{O}(f_n)$,
+    where each application advances the system discretely.
+  </p>
+
+  <p>
+    The proper time increment is written as $(\mathrm{d}\tau)$, and the initial
+    epoch occurs at ($t_0 \sim 3.8 \times 10^5$ years).
+  </p>
+
+  <h2>Example</h2>
+
+  <p>
+    A familiar physical relation appears naturally:
+    $E = mc^2$.
+  </p>
+
+  <p>
+    A representative integral:
+  </p>
+
+  $$
+  \int_0^\infty e^{-x} \, \mathrm{d}x = 1
+  $$
+
+  <hr>
+
+  <p style="font-size: 0.9em; color: #555;">
+    Mathematical notation is rendered using MathJax.
+    For best results, modern browsers are recommended.
+  </p>
+
+</body>
+</html>
