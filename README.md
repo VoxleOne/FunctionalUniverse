@@ -90,7 +90,7 @@ $$
 
 - The factor $(0.63 \approx 2^{-2/3})$ comes from the **matter-dominated temperature scaling**, not an arbitrary number.  
 - Each step represents one **compositional application** of the successor function.  
-- Each application takes a **finite duration** \(d\tau\).
+- Each application takes a **finite duration** $(d\tau)$.
 
 5. **First Few States**
 
