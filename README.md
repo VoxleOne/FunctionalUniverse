@@ -126,9 +126,9 @@ $$
 
 **Key Insights**
 
-1. The universe evolves **compositionally**, via repeated application of a successor function \(T\).  
+1. The universe evolves **compositionally**, via repeated application of a successor function $(T)$.  
 2. Church numeral analogy makes **nested, history-dependent evolution** intuitive.  
-3. Each transition has a **finite duration \(d\tau\)**, giving rise to emergent **proper time**.  
+3. Each transition has a **finite duration** $(d\tau)$, giving rise to emergent **proper time**.  
 4. Discrete functional evolution reproduces **real cosmological observables**, like the cooling of the CMB.  
 5. **Time dilation** and **spacetime geometry** naturally emerge from **transition counting** and compositional structure.
 
