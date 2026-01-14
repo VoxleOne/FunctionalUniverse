@@ -105,14 +105,14 @@ $$
 | …  | …              | …       |
 | 16 | 2.50×10¹⁰      | 1.9     |
 
-Observation: after ~16 compositional steps, the predicted temperature approaches the observed CMB temperature \(T_{\rm CMB} \approx 2.725\) K.
+Observation: after ~16 compositional steps, the predicted temperature approaches the observed CMB temperature $(T_{\rm CMB} \approx 2.725)$ K.
 
 ---
 
 ### 3. Emergent Time and Transition Duration
 
-- Each transition \(f_n \to f_{n+1}\) represents a **physically meaningful change**: any evolution of a quantum state into a **distinguishable new state**.  
-- Transitions are **not instantaneous**; they take a finite duration \(d\tau_n\), reflecting the **minimal physically allowed evolution** consistent with quantum mechanics and causality.  
+- Each transition $(f_n \to f_{n+1})$ represents a **physically meaningful change**: any evolution of a quantum state into a **distinguishable new state**.  
+- Transitions are **not instantaneous**; they take a finite duration $(d\tau_n)$, reflecting the **minimal physically allowed evolution** consistent with quantum mechanics and causality.  
 - The **accumulated transition durations** along a worldline define operational **proper time**:
 
 $$
