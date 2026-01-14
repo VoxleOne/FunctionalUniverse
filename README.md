@@ -32,9 +32,9 @@ $$
 f_0 = \{\}, \quad f_1 = \{f_0\}, \quad f_2 = \{f_0, f_1\}, \quad \dots
 $$
 
-- Each numeral is a **composition of a function** applied $(n$) times.  
+- Each numeral is a **composition of a function** applied $(n)$ times.  
 - Likewise, each universe state is a **compositional application** of the successor function, naturally encoding **history and potential branching**.  
-- Each composition step is associated with a **transition duration** $(d\tau$), emphasizing that even functional evolution is **physically mediated**.
+- Each composition step is associated with a **transition duration** $(d\tau)$, emphasizing that even functional evolution is **physically mediated**.
 
 ---
 
@@ -68,13 +68,13 @@ $$
 t_n = t_0 \cdot 2^n.
 $$
 
-Then the temperature at state \(n\) is:
+Then the temperature at state $(n)$ is:
 
 $$
 T_n = T_0 \cdot 2^{-2n/3}.
 $$
 
-Each state transition is associated with a **minimal transition duration** \(d\tau\), reflecting the time it takes for physical changes to occur in the system.
+Each state transition is associated with a **minimal transition duration** $(d\tau)$, reflecting the time it takes for physical changes to occur in the system.
 
 3. **Initial Conditions**  
 
@@ -88,7 +88,7 @@ $$
 f_{n+1} = T(f_n) = f_n \cdot 2^{-2/3} \approx 0.63 f_n
 $$
 
-- The factor \(0.63 \approx 2^{-2/3}\) comes from the **matter-dominated temperature scaling**, not an arbitrary number.  
+- The factor $(0.63 \approx 2^{-2/3})$ comes from the **matter-dominated temperature scaling**, not an arbitrary number.  
 - Each step represents one **compositional application** of the successor function.  
 - Each application takes a **finite duration** \(d\tau\).
 
