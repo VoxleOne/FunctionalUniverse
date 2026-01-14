@@ -119,7 +119,7 @@ $$
 \tau_{\rm worldline} = \sum_n d\tau_n
 $$
 
-- This formalizes the idea that **time is emergent** — only **composition and transition counting** matter.  
+- This formalizes the idea that **time is emergent**; only **composition and transition counting** matter.  
 - In this view, **time dilation** arises naturally: systems moving relative to one another, or in different gravitational potentials, accumulate **fewer or more internal transitions per global state**, reproducing the predictions of relativity without invoking a fundamental time parameter.
 
 ---
