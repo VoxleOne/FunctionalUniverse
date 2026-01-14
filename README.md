@@ -49,7 +49,7 @@ $$
 T(t) \propto a(t)^{-1}
 $$
 
-where \(a(t)\) is the scale factor. In a **matter-dominated universe**:
+where $(a(t))$ is the scale factor. In a **matter-dominated universe**:
 
 $$
 a(t) \propto t^{2/3} \quad \implies \quad T(t) \propto t^{-2/3}.
@@ -62,7 +62,7 @@ $$
 f_n = T_n = T(f_n)
 $$
 
-and choose each state step \(n \to n+1\) to correspond to a **doubling of cosmic time**:
+and choose each state step $(n \to n+1)$ to correspond to a **doubling of cosmic time**:
 
 $$
 t_n = t_0 \cdot 2^n.
