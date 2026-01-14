@@ -19,9 +19,9 @@ $$
 is a **successor function** generating the next state.  
 
 - Each state $(f_n)$ encodes the physical properties of the universe at that stage.  
-- Observables are functions of the state: \(\mathcal{O}_n = \mathcal{O}(f_n)\).  
+- Observables are functions of the state: $(\mathcal{O}_n = \mathcal{O}(f_n))$.  
 - Time is **emergent**, measured as the accumulation of **internal transitions** along worldlines.  
-- Each transition between states has a **finite duration** \(d\tau\), reflecting the minimal physically allowed evolution (e.g., energy-limited quantum transitions).  
+- Each transition between states has a **finite duration** $(d\tau$), reflecting the minimal physically allowed evolution (e.g., energy-limited quantum transitions).  
 - The evolution of the universe is **compositional**: each state is fully defined by applying the successor function to the previous state(s), with no reference to an external clock.
 
 ### Church Numeral Analogy
@@ -32,9 +32,9 @@ $$
 f_0 = \{\}, \quad f_1 = \{f_0\}, \quad f_2 = \{f_0, f_1\}, \quad \dots
 $$
 
-- Each numeral is a **composition of a function** applied \(n\) times.  
+- Each numeral is a **composition of a function** applied $(n$) times.  
 - Likewise, each universe state is a **compositional application** of the successor function, naturally encoding **history and potential branching**.  
-- Each composition step is associated with a **transition duration** \(d\tau\), emphasizing that even functional evolution is **physically mediated**.
+- Each composition step is associated with a **transition duration** $(d\tau$), emphasizing that even functional evolution is **physically mediated**.
 
 ---
 
@@ -43,7 +43,7 @@ $$
 We can test this framework with a **quantitative cosmology example**: the cooling of the Cosmic Microwave Background (CMB) after recombination.  
 
 1. **Physical Model**  
-After recombination (\(t_0 \sim 3.8 \times 10^5\) years), the CMB temperature evolves as:
+After recombination $(\(t_0 \sim 3.8 \times 10^5\) years)$, the CMB temperature evolves as:
 
 $$
 T(t) \propto a(t)^{-1}
