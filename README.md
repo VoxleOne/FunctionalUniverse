@@ -18,7 +18,7 @@ $$
 
 is a **successor function** generating the next state.  
 
-- Each state \(f_n\) encodes the physical properties of the universe at that stage.  
+- Each state $(f_n)$ encodes the physical properties of the universe at that stage.  
 - Observables are functions of the state: \(\mathcal{O}_n = \mathcal{O}(f_n)\).  
 - Time is **emergent**, measured as the accumulation of **internal transitions** along worldlines.  
 - Each transition between states has a **finite duration** \(d\tau\), reflecting the minimal physically allowed evolution (e.g., energy-limited quantum transitions).  
