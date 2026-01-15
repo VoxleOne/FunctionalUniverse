@@ -4,7 +4,7 @@ Modeling the cosmos as a sequence of functional states.
 
 ## Overview
 
-FunctionalUniverse is a Python implementation of a universe based on five fundamental axioms that govern state transitions, composition, and causality.
+FunctionalUniverse is a Python implementation of a model universe based on five fundamental axioms that govern state transitions, composition, and causality.
 
 ## The Five Axioms
 
