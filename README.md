@@ -103,7 +103,7 @@ python -m unittest discover -s tests -v
 
 ### UniverseConstants
 
-Defines the fundamental constants of your universe:
+Defines the fundamental constants of our universe:
 
 ```python
 constants = UniverseConstants(
