@@ -26,7 +26,10 @@ is a **successor function** generating the next state.
 
 ### Church Numeral Analogy
 
-This is naturally analogous to **Church numerals**, which encode numbers via **repeated composition**:
+In this framework, we can represent sequential states and their compositions using concepts analogous to Church numerals in lambda calculus. Each state can be seen as a 
+function of the previous state, and iteration over these functions mirrors the counting structure of Church numerals. 
+Disclaimer: this analogy is purely mathematical and conceptual. It is not a claim about metaphysics, consciousness, or the universe literally being a computer. 
+The purpose is to illustrate formal compositional structure in state evolution, not to make ontological or physical assertions about reality.
 
 $$
 f_0 = \{\}, \quad f_1 = \{f_0\}, \quad f_2 = \{f_0, f_1\}, \quad \dots
