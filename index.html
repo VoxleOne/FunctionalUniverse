@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>index</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" type="text/javascript"></script>
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul><li><a href="#the-universe-as-a-compositional-sequence-of-states">The Universe as a Compositional Sequence of States</a><ul><li><a href="#introduction">1. Introduction</a></li><li><a href="#axioms">2. Axioms</a><ul><li><a href="#axiom-1-functional-ontology">Axiom 1 — Functional Ontology</a></li><li><a href="#axiom-2-minimal-transition-duration">Axiom 2 — Minimal Transition Duration</a></li><li><a href="#axiom-3-entropy-as-physical-quantity">Axiom 3 — Entropy as Physical Quantity</a></li><li><a href="#axiom-4-causality-as-composability">Axiom 4 — Causality as Composability</a></li><li><a href="#axiom-5-invariant-speed-of-causality">Axiom 5 — Invariant Speed of Causality</a></li></ul></li><li><a href="#conceptual-framework">3. Conceptual Framework</a></li><li><a href="#application-examples">4. Application Examples</a><ul><li><a href="#successor-function-and-cmb-cooling-example">4.1. Successor Function and CMB Cooling Example</a></li><li><a href="#emergent-time-and-transition-duration">4.2.. Emergent Time and Transition Duration</a></li></ul></li><li><a href="#references">References</a></li></ul></li></ul>
+</nav>
+<h1 id="the-universe-as-a-compositional-sequence-of-states">The Universe as a Compositional Sequence of States</h1><p>Modeling the cosmos as a sequence of functional states.</p><h2 id="introduction">1. Introduction</h2><p>Traditionally, physics treats time as a fundamental parameter: events unfold within a pre-existing temporal framework. Here, we explore an alternative:</p><ul><li>The universe is a <strong>sequence of nested states</strong>.<br />
+</li><li><strong>Time emerges</strong> from the succession of states, rather than existing independently.</li></ul><p><span class="math display">\[
+f_{n+1} = T(f_n)
+\]</span></p><p>–</p><h2 id="axioms">2. Axioms</h2><h3 id="axiom-1-functional-ontology">Axiom 1 — Functional Ontology</h3><p>The universe is a compositional structure of functions. What exists fundamentally are compositions of transitions, not states or objects. Formally:</p><p><span class="math display">\[
+fi​:(Si​→Si+1​)↦(Si+1​→Si+2​) 
+\]</span></p><p>Consequence - “Things” are stabilized patterns of transitions - States are interfaces, not ontological primitives</p><h3 id="axiom-2-minimal-transition-duration">Axiom 2 — Minimal Transition Duration</h3><p>There exists a universal, nonzero lower bound dτmin​ on the duration of any irreducible physical transition.</p><p><em>The value of this bound is an empirical parameter to be constrained by observation, not fixed by the axioms themselves.</em></p><p>Consequence - No instantaneous change - No infinite rates - Zeno paradoxes are impossible - Time must be emergent and discrete at base</p><h3 id="axiom-3-entropy-as-physical-quantity">Axiom 3 — Entropy as Physical Quantity</h3><p>Every irreducible transition carries a minimum entropy ΔSmin​ (e.g. one bit).</p><p>Consequence - Energy = entropy flow rate - Irreversibility is fundamental - Arrow of time is built in - Decoherence is not optional</p><h3 id="axiom-4-causality-as-composability">Axiom 4 — Causality as Composability</h3><p>Causality is the ordered composability of transitions; only composable transitions can influence each other.</p><p>Consequence - Causal structure precedes geometry - Locality is emergent - Causal cones are inevitable</p><h3 id="axiom-5-invariant-speed-of-causality">Axiom 5 — Invariant Speed of Causality</h3><p>The minimum transition duration implies a universal upper bound on causal composition, denoted c, which is invariant.</p><p>Consequence - Lorentz symmetry is forced - No preferred frame - c cannot vary without breaking causality</p><hr /><h2 id="conceptual-framework">3. Conceptual Framework</h2><p>We represent the universe as a sequence of nested states:</p><p><span class="math display">\[
+f_0, \quad f_1 = T(f_0), \quad f_2 = T(f_1), \quad \dots
+\]</span></p><p>where</p><p><span class="math display">\[
+T(f_n)
+\]</span></p><p>is a <strong>successor function</strong> generating the next state.</p><ul><li>Each state <span class="math inline">\((f_n)\)</span> encapsulates the physical properties of the universe at step <span class="math inline">\((n)\)</span>, and a <strong>successor function</strong> (T) generates the next state:</li><li>Observables are functions of the state: <span class="math inline">\((\mathcal{O}_n = \mathcal{O}(f_n))\)</span>.<br />
+</li><li>Time is <strong>emergent</strong>, measured as the accumulation of <strong>internal transitions</strong> along worldlines.<br />
+</li><li>Each transition between states has a <strong>finite duration</strong> <span class="math inline">\((d\tau\)</span>), reflecting the minimal physically allowed evolution (e.g., energy-limited quantum transitions).<br />
+</li><li>The evolution of the universe is <strong>compositional</strong>: each state is fully defined by applying the successor function to the previous state(s), with no reference to an external clock.</li></ul><h4 id="note-church-numeral-analogy"><em>Note: Church Numeral Analogy</em></h4><p>We can represent sequential states and their compositions using concepts analogous to Church numerals in lambda calculus. Each state can be seen as a function of the previous state, and iteration over these functions mirrors the counting structure of Church numerals.</p><p><strong>Disclaimer</strong>: this analogy is purely mathematical and conceptual. It is not a claim about metaphysics, consciousness, or the universe literally being a computer. The purpose is to illustrate formal compositional structure in state evolution, not to make ontological or physical assertions about reality.</p><p><span class="math display">\[
+f_0 = \{\}, \quad f_1 = \{f_0\}, \quad f_2 = \{f_0, f_1\}, \quad \dots
+\]</span></p><ul><li>Each numeral is a <strong>composition of a function</strong> applied <span class="math inline">\((n)\)</span> times.<br />
+</li><li>Likewise, each universe state is a <strong>compositional application</strong> of the successor function, naturally encoding <strong>history and potential branching</strong>.<br />
+</li><li>Each composition step is associated with a <strong>transition duration</strong> <span class="math inline">\((d\tau)\)</span>, emphasizing that even functional evolution is <strong>physically mediated</strong>.</li></ul><hr /><h2 id="application-examples">4. Application Examples</h2><h3 id="successor-function-and-cmb-cooling-example">4.1. Successor Function and CMB Cooling Example</h3><p>We can test this framework with a quantitative cosmology example: the cooling of the Cosmic Microwave Background (CMB) after recombination.</p><ol type="1"><li><strong>Physical Model</strong><br />
+After recombination <span class="math inline">\((\(t_0 \sim 3.8 \times 10^5\) years)\)</span>, the CMB temperature evolves as:</li></ol><p><span class="math display">\[
+T(t) \propto a(t)^{-1}
+\]</span></p><p>where <span class="math inline">\((a(t))\)</span> is the scale factor. In a matter-dominated universe::</p><p><span class="math display">\[
+a(t) \propto t^{2/3} \quad \implies \quad T(t) \propto t^{-2/3}.
+\]</span></p><ol start="2" type="1"><li><strong>Discrete State Steps</strong><br />
+We define discrete states corresponding to successor function applications:</li></ol><p><span class="math display">\[
+f_n = T_n = T(f_n)
+\]</span></p><p>and choose each state step <span class="math inline">\((n \to n+1)\)</span> to correspond to a <strong>doubling of cosmic time</strong>:</p><p><span class="math display">\[
+t_n = t_0 \cdot 2^n.
+\]</span></p><p>Then the temperature at state <span class="math inline">\((n)\)</span> is:</p><p><span class="math display">\[
+T_n = T_0 \cdot 2^{-2n/3}.
+\]</span></p><p>Each state transition is associated with a <strong>minimal transition duration</strong> <span class="math inline">\((d\tau)\)</span>, reflecting the time it takes for physical changes to occur in the system.</p><ol start="3" type="1"><li><strong>Initial Conditions</strong></li></ol><p><span class="math display">\[
+T_0 = 3000\,\text{K}, \quad t_0 = 3.8\times 10^5\,\text{yr}.
+\]</span></p><ol start="4" type="1"><li><strong>Successor Function (Discrete Update)</strong></li></ol><p><span class="math display">\[
+f_{n+1} = T(f_n) = f_n \cdot 2^{-2/3} \approx 0.63 f_n
+\]</span></p><ul><li>The factor <span class="math inline">\((0.63 \approx 2^{-2/3})\)</span> comes from the <strong>matter-dominated temperature scaling</strong>, not an arbitrary number.<br />
+</li><li>Each step represents one <strong>compositional application</strong> of the successor function.<br />
+</li><li>Each application takes a <strong>finite duration</strong> <span class="math inline">\((d\tau)\)</span>.</li></ul><ol start="5" type="1"><li><strong>First Few States</strong></li></ol><table><thead><tr class="header"><th>n</th><th>t_n (yr)</th><th>T_n (K)</th></tr></thead><tbody><tr class="odd"><td>0</td><td>3.80×10⁵</td><td>3000</td></tr><tr class="even"><td>1</td><td>7.60×10⁵</td><td>1890</td></tr><tr class="odd"><td>2</td><td>1.52×10⁶</td><td>1190</td></tr><tr class="even"><td>3</td><td>3.04×10⁶</td><td>750</td></tr><tr class="odd"><td>4</td><td>6.08×10⁶</td><td>470</td></tr><tr class="even"><td>5</td><td>1.22×10⁷</td><td>296</td></tr><tr class="odd"><td>…</td><td>…</td><td>…</td></tr><tr class="even"><td>16</td><td>2.50×10¹⁰</td><td>1.9</td></tr></tbody></table><p>Observation: after ~16 compositional steps, the predicted temperature approaches the observed CMB temperature <span class="math inline">\((T_{\rm CMB} \approx 2.725)\)</span> K.</p><hr /><h3 id="emergent-time-and-transition-duration">4.2.. Emergent Time and Transition Duration</h3><ul><li>Each transition <span class="math inline">\((f_n \to _{n+1})\)</span> represents a physically meaningful change: any evolution of a quantum state into a distinguishable new state</li><li>Transitions are not instantaneou; they take a finite duration <span class="math inline">\((d\tau_n)\)</span>, reflecting the minimal physically allowed evolutio consistent with quantum mechanics and causality.</li><li>The accumulated transition durations along a worldline define operational proper time:</li></ul><p><span class="math display">\[
+\tau_{\rm worldline} = \sum_n d\tau_n
+\]</span></p><ul><li>This formalizes the idea that time is emergent; only <strong>composition and transition counting</strong> matter.<br />
+</li><li>In this view, <strong>time dilation</strong> arises naturally: systems moving relative to one another, or in different gravitational potentials, accumulate <strong>fewer or more internal transitions per global state</strong>, reproducing the predictions of relativity without invoking a fundamental time parameter.</li></ul><hr /><p><strong>Key Insights</strong></p><ol type="1"><li>The universe evolves <strong>compositionally</strong>, via repeated application of a successor function <span class="math inline">\((T)\)</span>.<br />
+</li><li>Church numeral analogy makes <strong>nested, history-dependent evolution</strong> intuitive.<br />
+</li><li>Each transition has a <strong>finite duration</strong> <span class="math inline">\((d\tau)\)</span>, giving rise to emergent <strong>proper time</strong>.<br />
+</li><li>Discrete functional evolution reproduces <strong>real cosmological observables</strong>, like the cooling of the CMB.<br />
+</li><li><strong>Time dilation</strong> and <strong>spacetime geometry</strong> naturally emerge from <strong>transition counting</strong> and compositional structure.</li></ol><hr /><h2 id="references">References</h2><ol type="1"><li>Margolus, N., &amp; Levitin, L. B. “The maximum speed of dynamical evolution.” <em>Physica D</em>, 1998.<br />
+</li><li>Peebles, P. J. E. <em>Principles of Physical Cosmology</em>, 1993.<br />
+</li><li>Sorkin, R. “Causal sets: Discrete gravity,” 2003.</li></ol>
+</body>
+</html>
