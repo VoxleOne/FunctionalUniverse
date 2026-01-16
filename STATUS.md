@@ -1,4 +1,4 @@
-### Current Standing: A "Single Worldline" Simulation
+## Current Standing: A "Single Worldline" Simulation
 
 We have successfully implemented a **0-dimensional, linear time** version of our Functional Universe. The code rigorously enforces the axioms for a single sequence of events.
 
@@ -19,7 +19,7 @@ The axioms suggest that "Locality is emergent" and "Causal cones are inevitable.
 *   **Current State:** `state = f_n( ... f_1(f_0) )`. This is one particle or one observer's clock.
 *   **Target State:** A network where multiple transitions can happen "in parallel" (logically) if they don't depend on each other's outputs.
 
-### Proposed Next Steps
+## Proposed Next Steps
 
 To demonstrate the power of these axioms, we are working to move from a Linear Time framework to a Causal Graph (DAG) representation. In this extended framework, we introduce a function aggregation layer that allows us to model non-sequential quantum phenomena such as superposition and entanglement.
 
