@@ -39,4 +39,4 @@ To demonstrate the power of these axioms, we are working to move from a Linear T
     A simple script to plot the `Transition` history as a graph.
     *   Nodes = States
     *   Edges = Transitions (weighted by duration)
-    *   This will visually prove that **Time is emergent** (longest path length) and **Space is emergent** (separation in the graph).
+    *   Hopefully this will visually show that **Time is emergent** (longest path length) and **Space is emergent** (separation in the graph).
