@@ -30,9 +30,9 @@ Consequence
 ---
 
 ### Axiom 2 — Minimal Transition Duration
-There exists a universal, nonzero lower bound dτmin​ on the duration of any irreducible physical transition. 
+There exists a universal, nonzero lower bound $d\tau_min$​ on the duration of any irreducible physical transition. 
 
-The value of this bound is an empirical parameter to be constrained by observation, not fixed by the axioms themselves.
+*The value of this bound is an empirical parameter to be constrained by observation, not fixed by the axioms themselves.*
 
 Consequence
 - No instantaneous change
