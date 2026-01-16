@@ -1,4 +1,4 @@
-# Theoretical Foundation of FunctionalUniverse
+# Theoretical Foundation of the Functional Universe
 
 ## Introduction
 
