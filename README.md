@@ -13,8 +13,6 @@ $$
 f_{n+1} = T(f_n)
 $$
 
---
-
 ## 2. Axioms
 
 ### Axiom 1 — Functional Ontology
@@ -64,8 +62,6 @@ Consequence
 - No preferred frame
 - c cannot vary without breaking causality
 
----
-
 ## 3. Conceptual Framework
 
 We represent the universe as a sequence of nested states:
@@ -101,8 +97,6 @@ $$
 - Each numeral is a **composition of a function** applied $(n)$ times.  
 - Likewise, each universe state is a **compositional application** of the successor function, naturally encoding **history and potential branching**.  
 - Each composition step is associated with a **transition duration** $(d\tau)$, emphasizing that even functional evolution is **physically mediated**.
-
----
 
 ## 4. Application Examples
 
