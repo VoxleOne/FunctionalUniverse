@@ -74,7 +74,7 @@ $$
 f_0, \quad f_1 = T(f_0), \quad f_2 = T(f_1), \quad \dots
 $$
 
-where 
+where
 
 $$
 T(f_n)
