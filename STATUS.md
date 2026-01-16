@@ -21,7 +21,7 @@ The axioms suggest that "Locality is emergent" and "Causal cones are inevitable.
 
 ### Proposed Next Steps
 
-To do something that demonstrates the power of these axioms, we could move from **Linear Time** to **Causal Graph (DAG)**. We are working in the extension of this framework, a function aggregation layer to be able to model non-sequential QFT phenomena like superposition, entanglement.
+To demonstrate the power of these axioms, we are working to move from a Linear Time framework to a Causal Graph (DAG) representation. In this extended framework, we introduce a function aggregation layer that allows us to model non-sequential quantum phenomena such as superposition and entanglement.
 
 1.  **Refactor `Universe` to support Partial Ordering**:
     Instead of a single `current_state`, the universe should track a **Frontier** of states.
