@@ -14,6 +14,7 @@ f_{n+1} = T(f_n)
 $$
 
 ## 2. Axioms
+---
 
 ### Axiom 1 — Functional Ontology
 The universe is a compositional structure of functions. What exists fundamentally are compositions of transitions, not states or objects. Formally:
@@ -26,6 +27,8 @@ Consequence
 - “Things” are stabilized patterns of transitions
 - States are interfaces, not ontological primitives
 
+---
+
 ### Axiom 2 — Minimal Transition Duration
 There exists a universal, nonzero lower bound dτmin​ on the duration of any irreducible physical transition. 
 
@@ -37,6 +40,8 @@ Consequence
 - Zeno paradoxes are impossible
 - Time must be emergent and discrete at base
 
+---
+
 ### Axiom 3 — Entropy as Physical Quantity
 Every irreducible transition carries a minimum entropy ΔSmin​ (e.g. one bit).
 
@@ -46,6 +51,8 @@ Consequence
 - Arrow of time is built in
 - Decoherence is not optional
 
+---
+
 ### Axiom 4 — Causality as Composability
 Causality is the ordered composability of transitions; only composable transitions can influence each other.
 
@@ -54,6 +61,8 @@ Consequence
 - Locality is emergent
 - Causal cones are inevitable
 
+---
+
 ### Axiom 5 — Invariant Speed of Causality
 The minimum transition duration implies a universal upper bound on causal composition, denoted c, which is invariant.
 
@@ -61,6 +70,8 @@ Consequence
 - Lorentz symmetry is forced
 - No preferred frame
 - c cannot vary without breaking causality
+
+---
 
 ## 3. Conceptual Framework
 
