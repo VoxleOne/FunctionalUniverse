@@ -1,6 +1,6 @@
 # Functional Universe
 
-Modeling the cosmos as a sequence of functional states.
+Modeling the cosmos as a sequence of functional states. [See the entire concept](https://voxleone.github.io/FunctionalUniverse)
 
 ## Overview
 
