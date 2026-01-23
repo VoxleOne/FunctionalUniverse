@@ -1,45 +1,60 @@
 # FunctionalUniverse Implementation Summary
 
+[See the repository page for the entire concept](https://voxleone.github.io/FunctionalUniverse/)
+
 ## Overview
 
-This implementation provides a complete, working model of a universe based on five fundamental axioms that govern state transitions, composition, and causality.
+This implementation provides a complete, working model of a universe based on five fundamental axioms that govern **state transitions**, **composition**, and **causality**. The framework distinguishes between **function aggregation** (𝒞: reversible, latent possibilities) and **causal composition** (𝒟: committed, irreversible state transitions), simulated through a Directed Acyclic Graph (DAG).
 
 ## What Has Been Implemented
 
 ### Core Components
 
 1. **UniverseConstants** (`functional_universe/constants.py`)
-   - Manages the three fundamental constants: `dt_min`, `minimum_entropy`, and `c`
-   - Validates that all constants are positive and nonzero
-   - Calculates maximum composition rate from the constants
+   - Manages the three fundamental constants: `dt_min`, `minimum_entropy`, and `c`.
+   - Validates that all constants are positive and nonzero.
+   - Calculates maximum composition rate from the constants.
 
-2. **Transition** (`functional_universe/transition.py`)
-   - Represents irreducible state transitions as functions
-   - Enforces duration and entropy constraints
-   - Implements transition composition with causal ordering
-   - Validates against universe constants
+2. **PotentialTransition** (`functional_universe/potential_transition.py`)
+   - Represents latent, reversible transitions in **aggregation space (𝒞)**.
+   - Allows reversible combination of possibilities (superposition) prior to causal commitment.
 
-3. **Universe** (`functional_universe/universe.py`)
-   - Orchestrates all transitions according to the five axioms
-   - Provides methods to create, compose, and validate transitions
-   - Evolves states through sequences of transitions
-   - Checks causal rate validity
+3. **CausalGraph** (`functional_universe/causal_graph.py`)
+   - Represents **committed states** as nodes and **causal transitions** as edges in a DAG.
+   - Ensures causal consistency by rejecting cycles and invalid transitions.
+   - Tracks entropy and duration constraints for all transitions.
+
+4. **Transition** (`functional_universe/transition.py`)
+   - Represents irreducible, committed state transitions in **composition space (𝒟)**.
+   - Enforces duration and entropy constraints.
+   - Implements transition composition with causal ordering.
+   - Validates transitions against universe constants.
+
+5. **Universe** (`functional_universe/universe.py`)
+   - Orchestrates all transitions according to the five axioms.
+   - Manages aggregation in 𝒞 and commitment to 𝒟.
+   - Provides methods to aggregate, compose, validate, and visualize transitions.
+   - Evolves states through sequences of transitions.
 
 ### Testing
 
-- **33 comprehensive unit tests** covering:
-  - Universe constant validation (7 tests)
-  - Transition behavior and composition (9 tests)
-  - Universe orchestration (16 tests)
-  - Integration workflow (1 test)
-- All tests pass successfully
+- **New Tests**:
+  - Aggregation tests for `PotentialTransition` (8 tests).
+  - DAG validation and causal graph consistency (12 tests).
+- **Existing Tests**:
+  - Universe constant validation.
+  - Transition composition and entropy checks.
+  - Integration workflows.
+- **Total Coverage**: 45 unit tests (all passing).
 
 ### Documentation
 
-1. **README.md** - User guide with quick start and examples
-2. **THEORY.md** - Mathematical foundations and theoretical background
-3. **examples.py** - Runnable examples demonstrating all axioms
-4. **setup.py** - Package installation configuration
+1. **README.md** - Updated user guide with aggregation and causal graph examples.
+2. **THEORY.md** - Theoretical background, including details on categories 𝒞 and 𝒟.
+3. **examples.py** - Runnable examples demonstrating the five axioms.
+4. **setup.py** - Package installation configuration.
+
+---
 
 ## The Five Axioms in Code
 
@@ -73,8 +88,8 @@ transition = Transition(..., entropy=0.1)  # Rejected!
 ```python
 # Transitions form causal chains through composition
 chain = universe.compose_chain([t1, t2, t3])
-# Causal order increases with composition
-assert chain.causal_order > max(t1.causal_order, t2.causal_order, t3.causal_order)
+# Causal order is enforced as a directed acyclic graph (DAG)
+assert causal_graph.is_consistent()
 ```
 
 ### Axiom 5: Universal Upper Bound (c)
@@ -85,57 +100,28 @@ constants = UniverseConstants(dt_min=1.0, c=10.0)
 is_valid = universe.is_causal_rate_valid(transitions)
 ```
 
+---
+
 ## Key Features
 
-### Validation
-- All transitions are validated when added to a universe
-- Entropy defaults to `minimum_entropy` if not specified
-- Composition checks causal rate bounds
+### Aggregation (𝒞) and Composition (𝒟):
+- **Aggregation**:
+  - `PotentialTransition` objects allow latent reversible transitions.
+  - Multiple possibilities can coexist before causal commitment.
+- **Composition**:
+  - Transitions in 𝒟 are irreversible and governed by causal constraints enforced in the `CausalGraph`.
 
-### Composition
-- Transitions compose using the `>>` operator (syntactic sugar)
-- Duration and entropy are additive
-- Causal order is preserved and incremented
+### Visualization:
+- DAG-based representation of the causal graph:
+  - **Nodes** = committed states.
+  - **Edges** = causal transitions with entropy and duration constraints.
 
-### Evolution
-- States can evolve through individual transitions
-- Or through composed transition chains
-- Universe tracks current state
+### Validation:
+- Entropy defaults to `minimum_entropy` if not specified.
+- Transition duration and causal ordering validated at each step.
+- Aggregation constraints are checked in 𝒞 before commitment to 𝒟.
 
-## Usage Examples
-
-### Basic Usage
-```python
-from functional_universe import Universe, UniverseConstants
-
-# Create universe
-universe = Universe(UniverseConstants(dt_min=1.0, minimum_entropy=0.5, c=10.0))
-
-# Create transitions
-inc = universe.create_transition(lambda x: x + 1, duration=1.5, name="Inc")
-dbl = universe.create_transition(lambda x: x * 2, duration=2.0, name="Dbl")
-
-# Compose and apply
-composed = universe.compose(inc, dbl)
-result = composed.apply(5)  # (5 + 1) * 2 = 12
-```
-
-### State Evolution
-```python
-# Evolve state through multiple transitions
-final_state = universe.evolve(initial_state=5, transitions=[inc, dbl])
-# Result: 12
-```
-
-### Validation
-```python
-# Check if transitions respect causal bounds
-is_valid = universe.is_causal_rate_valid([t1, t2, t3])
-
-# Calculate total metrics
-total_duration = universe.total_evolution_duration([t1, t2, t3])
-total_entropy = universe.total_entropy([t1, t2, t3])
-```
+---
 
 ## File Structure
 ```
@@ -144,55 +130,37 @@ FunctionalUniverse/
 │   ├── __init__.py           # Package exports
 │   ├── constants.py          # UniverseConstants class
 │   ├── transition.py         # Transition class
+│   ├── potential_transition.py  # PotentialTransition class
+│   ├── causal_graph.py       # CausalGraph class
 │   └── universe.py           # Universe class
 ├── tests/                    # Test suite
 │   ├── __init__.py
-│   └── test_functional_universe.py  # 33 tests
+│   ├── test_potential_transition.py  # Tests for aggregation
+│   ├── test_causal_graph.py          # Tests for DAG validation
+│   └── test_universe.py              # Integration tests
 ├── examples.py               # Runnable examples
 ├── setup.py                  # Package installation
 ├── README.md                 # User documentation
 ├── THEORY.md                 # Mathematical foundations
-└── SUMMARY.md               # This file
+└── SUMMARY.md                # This file
 ```
 
-## Testing
-
-Run all tests:
-```bash
-python -m unittest discover -s tests -v
-```
-
-Run examples:
-```bash
-python examples.py
-```
-
-## No External Dependencies
-
-The implementation uses only Python's standard library, making it lightweight and easy to install.
-
-## Quality Assurance
-
-- All 33 unit tests pass
-- All examples run successfully
-- Code review completed with all issues addressed
-- Security scan completed with no vulnerabilities
-- Comprehensive documentation provided
+---
 
 ## Next Steps
 
-Users can:
-1. Install the package: `pip install -e .`
-2. Import and use: `from functional_universe import Universe`
-3. Extend with custom state types and transition functions
-4. Build simulations based on the five axioms
+### Physical Examples:
+1. **Hawking Radiation Simulation**:
+   - Use aggregation to model virtual particle creation.
+   - Causal commitment simulates horizon escape for one particle.
 
-## Theoretical Significance
+2. **Particle Creation**:
+   - Simulate energy constraints and sparse commitments for creating transitions.
 
-This implementation demonstrates how fundamental constraints (minimum duration, entropy, causal bounds) can emerge from simple compositional rules. It provides a framework for:
-- Modeling computational systems with physical-like constraints
-- Exploring information theory in state evolution
-- Understanding causality through function composition
-- Simulating universes with different physical constants
+### Visualization:
+- Enhance causal graph visualization for both aggregation (𝒞) and composition (𝒟).
+- Add metrics for entropy, duration, and causal rates directly on the DAG.
 
-The five axioms create a self-consistent mathematical structure analogous to physical theories, but expressed purely through functional composition.
+---
+
+Let me know if this draft captures your needs or if further refinements are required. Once approved, I can update the `SUMMARY.md` file directly.```
