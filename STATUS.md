@@ -32,8 +32,8 @@ The new framework supports both **parallel transitions** and **causal graphs**, 
   - Composition: Updates the DAG `$𝒟$` with committed transitions.
 
 - **Causal Graph**:
-  - Transitions are visualized as nodes in a DAG:
-    - Sequence of edges connected by entropy and duration constraints (e.g., $t_1 \to t_2$).
+  - The causal graph (DAG) visualizes committed states as nodes, and transitions as edges connecting those states.
+    - Edges are weighted by properties like entropy and duration constraints (e.g., $t_1 \to t_2$ ).
 
 ---
 
