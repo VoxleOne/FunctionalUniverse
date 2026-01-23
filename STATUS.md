@@ -1,42 +1,57 @@
-## Current Standing: A "Single Worldline" Simulation
+## Current Standing: Parallel Aggregation and Causal Composition
 
-We have successfully implemented a **0-dimensional, linear time** version of our Functional Universe. The code rigorously enforces the axioms for a single sequence of events.
+We have successfully implemented a **framework based on aggregation and composition**, enabling a richer simulation of the Functional Universe. The recent architectural updates introduce **function aggregation** (category 𝒞) and **causal composition** (category 𝒟) as distinct phases in the universe's evolution.
 
-1.  **Axiom 1 (Composition)**: Implemented. `Transition` objects wrap Python functions and can be composed mathematically `f(g(x))` and physically (summing entropy/duration).
+### Key Updates:
 
-2.  **Axiom 2 (Min Duration)**: Enforced. The `Universe` rejects any transition where `duration < dt_min`.
+1. **Axiom 1 (Composition)**: Implemented. `Transition` objects model causal composition in 𝒟, while `PotentialTransition` objects model latent possibilities in 𝒞.
+   - Aggregation enables coexistence of multiple potential transitions without causal ordering.
+   - Composition selects committed transitions that update proper time, entropy, and causal history.
 
-3.  **Axiom 3 (Entropy)**: Enforced. Entropy is tracked and strictly non-decreasing (monotonic).
+2. **Axiom 2 (Min Duration)**: Enforced. Each transition respects the minimum duration, ensuring no violations of causality.
 
-4.  **Axiom 4 (Causality)**: Partially Implemented. Currently, causality is represented as a **Total Order** (a single list: $t_1 \to t_2 \to t_3$). In physics, causality is a **Partial Order** (a Directed Acyclic Graph). This means currently, *everything* blocks *everything else*. There is no concept of "spatial separation" where two events can happen independently.
+3. **Axiom 3 (Entropy)**: Enforced. The framework guarantees monotonic entropy growth for all committed transitions.
 
-5.  **Axiom 5 (Speed limit $c$)**: Implemented as a "Rate Limit". The code correctly calculates if a sequence of transitions happens "too fast" for the physical limits allowed.
+4. **Axiom 4 (Causality)**: Updated to support **Partial Ordering**.
+   - Causality is now modeled as a **Directed Acyclic Graph (DAG)**, where:
+     - Nodes represent committed states in 𝒟.
+     - Edges represent irreversible transitions, preserving causal consistency.
+   - Parallel aggregation allows independent transitions to coexist in 𝒞 before commitment.
 
-### The Missing Piece: Emergent Space
+5. **Axiom 5 (Speed limit $c$)**: Enforced. The causal graph ensures that no sequence of transitions exceeds the universal composition rate.
 
-The axioms suggest that "Locality is emergent" and "Causal cones are inevitable." However, the current Python implementation processes a single global `state`.
+---
 
-*   **Current State:** `state = f_n( ... f_1(f_0) )`. This is one particle or one observer's clock.
-*   **Target State:** A network where multiple transitions can happen "in parallel" (logically) if they don't depend on each other's outputs.
+### The Missing Pieces: Physical Examples and Visualizations
 
-## Proposed Next Steps
+The new framework supports both **parallel transitions** and **causal graphs**, but further work is needed to solidify the connection between emergent properties and physical examples.
 
-To demonstrate the power of these axioms, we are working to move from a Linear Time framework to a Causal Graph (DAG) representation. In this extended framework, we introduce a function aggregation layer that allows us to model non-sequential quantum phenomena such as superposition and entanglement.
+#### Current Behavior:
+- **State Representation**:
+  - Aggregation: `$𝒞 = \{t_1, t_2, ...\}$` (latent transitions, unordered possibilities).
+  - Composition: Updates the DAG `$𝒟$` with committed transitions.
 
-1.  **Refactor `Universe` to support Partial Ordering**:
-    Instead of a single `current_state`, the universe should track a **Frontier** of states.
-    *   *Linear:* Transition A -> Transition B -> Transition C
-    *   *Causal Graph:* Transition A splits into B and C (which are independent). B and C merge into D.
-    *   *Why?* This creates "Space". The "distance" between B and C is defined by how far back their common ancestor (A) is.
+- **Causal Graph**:
+  - Transitions are visualized as nodes in a DAG:
+    - Sequence of edges connected by entropy and duration constraints (e.g., $t_1 \to t_2$).
 
-2.  **Concrete "Matter" Simulation**:
-    We need a concrete state to visualize "stabilized patterns" (Axiom 1).
-    *   *Idea:* Use a simple **Bit Grid** or **Graph Node** as the state.
-    *   Define a transition that "moves" a bit of information.
-    *   If we run this, we should see "light cones" (speed limits) appearing naturally in the grid without us programming them explicitly, just by enforcing Axiom 5.
+---
 
-3.  **Visualizer**:
-    A simple script to plot the `Transition` history as a graph.
-    *   Nodes = States
-    *   Edges = Transitions (weighted by duration)
-    *   Hopefully this will visually show that **Time is emergent** (longest path length) and **Space is emergent** (separation in the graph).
+### Proposed Next Steps
+
+#### 1. Finalize Hawking Radiation Example:
+Model virtual particle creation. Use aggregation to represent potential particle/antiparticle pairs, and causal commitment to simulate "horizon escape."
+
+- Visualization: Show how only the escaping particle updates the causal graph.
+
+#### 2. Extend Visualization Capabilities:
+Enable dynamic plotting of the causal graph.
+- Nodes = Committed States.
+- Colors or weights = Entropy and duration.
+
+#### 3. Stabilized Patterns:
+Simulate "information propagation" (e.g., movement of a signal) under strict adherence to causal and entropic constraints.
+
+- Use a simple **grid simulation** to show emergent causal cones.
+
+--- 
