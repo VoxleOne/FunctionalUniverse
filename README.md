@@ -22,6 +22,6 @@ Recent updates have refined the PotentialTransition mechanisms to better handle 
 
 Enhancements have been made to the visualization tools, aiming to provide clearer insights into the system's operations. Additionally, improvements in parallelism have been introduced, allowing for more efficient processing and better utilization of system resources.
 
-## Conclusion
+---
 
 These updates contribute significantly to the overall architecture of the Functional Universe project, ensuring we remain on the cutting edge of software design principles and efficient processing techniques.
