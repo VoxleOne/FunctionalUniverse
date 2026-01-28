@@ -20,10 +20,11 @@ nav[role="doc-toc"] {
     background-color: #fafafa;   /* Light sidebar background */
 }
 
-/* TOC lists */
-nav[role="doc-toc"] ul {
+/* --- TOC lists (FIXED TARGET) --- */
+nav[role="doc-toc"] > ul {
     list-style: none;
     padding-left: 0;
+    margin: 0;
 }
 
 nav[role="doc-toc"] li {
@@ -38,6 +39,28 @@ nav[role="doc-toc"] a {
 
 nav[role="doc-toc"] a:hover {
     text-decoration: underline;
+}
+
+/* --- OPTIONAL: Horizontal TOC (for index page) --- */
+/* Add class="toc-horizontal" to <body> to enable */
+body.toc-horizontal nav[role="doc-toc"] {
+    position: static;
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+    padding: 1rem 2rem;
+    background-color: #ffffff;
+}
+
+body.toc-horizontal nav[role="doc-toc"] > ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+body.toc-horizontal nav[role="doc-toc"] li {
+    margin: 0;
 }
 
 /* --- Main Content Area --- */
@@ -163,4 +186,3 @@ canvas {
         padding: 1.5rem;
     }
 }
-
