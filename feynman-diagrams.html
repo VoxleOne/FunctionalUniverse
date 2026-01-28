@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>feynman-diagrams</title>
+
+<!-- CSS files -->
+<link rel="stylesheet" href="style.css">
+
+<!-- Header includes (MathJax, meta, scripts) -->
+
+</head>
+<body>
+
+<!-- Optional preamble content -->
+
+<!-- Title Section -->
+<header>
+  <h1>feynman-diagrams</h1>
+  
+  <p class="authors">
+      </p>
+  
+</header>
+
+<!-- Navigation / Table of Contents -->
+<nav>
+  
+  <ul><li><a href="#feynman-diagrams">Feynman Diagrams</a><ul><li><a href="#why-feynman-diagrams-are-natural-in-our-ontology">1. Why Feynman diagrams are natural in our ontology</a></li><li><a href="#recasting-the-example-in-our-functional-language">2. Recasting the example in our functional language</a><ul><li><a href="#standard-qft-description">Standard QFT description</a></li><li><a href="#functional-formulation">Functional formulation</a></li></ul></li><li><a href="#virtual-particles-as-non-recomposed-aggregations">3. Virtual particles as non-recomposed aggregations</a></li><li><a href="#feynman-diagrams-as-computational-graphs">4. Feynman diagrams as computational graphs</a></li><li><a href="#why-transitions-are-verbs-is-technically-precise">5. Why “transitions are verbs” is technically precise</a></li><li><a href="#what-this-framework-buys-us">6. What this framework buys us</a></li></ul></li></ul>
+</nav>
+
+<!-- Main content -->
+<main>
+<h1 id="feynman-diagrams">Feynman Diagrams</h1><p>In this framework, Feynman diagrams are interpreted as <strong>compositional graphs of allowed transitions</strong>. Vertices correspond to irreducible or effective transitions; internal lines correspond to aggregations that mediate composition without registering as interface states; and external lines represent stabilized transition patterns.</p><p>This interpretation aligns with the operational role of Feynman diagrams in quantum field theory while explicitly avoiding particle reification.</p><p>In a simple Feynman diagram, an electron <span class="math inline">\((e^-)\)</span> and a positron <span class="math inline">\((e^+)\)</span> annihilate <em>(transition)</em>, producing a photon <span class="math inline">\((\gamma)\)</span> that later becomes <em>(transition)</em> a quark–antiquark pair. In our formulation, Feynman diagrams are not merely “handy” visual tools, but structurally natural objects.</p><p><strong>Guiding intuition:</strong><br />
+&gt; <em>Transitions correspond to operations or processes, typically expressed by verbs in human language.</em></p><p>We now make this precise and show why Feynman diagrams fit our framework almost perfectly.</p><hr /><h2 id="why-feynman-diagrams-are-natural-in-our-ontology">1. Why Feynman diagrams are natural in our ontology</h2><p>In standard QFT language, Feynman diagrams are often misread as literal pictures of particles moving in spacetime. Operationally, however, they function as:</p><ul><li>Bookkeeping devices for allowed transitions between interaction states</li></ul><p>This matches our axioms.</p><p>In our formulation:</p><ul><li><strong>Transitions</strong> are operations<br />
+</li><li><strong>States</strong> are interfaces<br />
+</li><li><strong>Particles</strong> are stabilized patterns of transitions</li></ul><p>Thus, a Feynman diagram is best understood as a compositional graph of allowed transitions, subject to causal and symmetry constraints.</p><hr /><h2 id="recasting-the-example-in-our-functional-language">2. Recasting the example in our functional language</h2><h3 id="standard-qft-description">Standard QFT description</h3><p>An electron and a positron annihilate, producing a photon, which later produces a quark–antiquark pair.</p><h3 id="functional-formulation">Functional formulation</h3><p>Let:</p><ul><li><span class="math inline">\((f_n)\)</span> be an interface state containing an <span class="math inline">\((e^-)\)</span> and <span class="math inline">\((e^+)\)</span> pattern<br />
+</li><li><span class="math inline">\((d\tau_1)\)</span> be the annihilation transition<br />
+</li><li><span class="math inline">\((d\tau_2)\)</span> be the pair-production transition</li></ul><p>Then:</p><p><span class="math display">\[
+f_{n+1} = \mathcal{C}(d\tau_1)
+\]</span></p><p><span class="math display">\[
+f_{n+2} = \mathcal{C}(d\tau_2)
+\]</span></p><p>More fundamentally, the diagram represents the composition:</p><p><span class="math display">\[
+d\tau_2 \circ d\tau_1
+\]</span></p><p>This is <strong>a composition of transitions</strong>, not objects moving through spacetime.</p><p>The photon <span class="math inline">\((\gamma)\)</span> is not a thing; it is an intermediate, composable transition pattern.<br />
+This is exactly how <em>virtual particles</em> function operationally.</p><hr /><h2 id="virtual-particles-as-non-recomposed-aggregations">3. Virtual particles as non-recomposed aggregations</h2><p>This is where the aggregation concept fits cleanly. In our ontology, the internal photon line is:</p><ul><li>Not a successor state<br />
+</li><li>Not a registered interface<br />
+</li><li>A parallel aggregation that successfully recomposes</li></ul><p>Thus:</p><blockquote><p><strong>A virtual particle is a composable aggregation of irreducible transitions that mediates between two effective transitions without becoming an interface state.</strong></p></blockquote><p>That single sentence fully reinterprets virtual particles in our language.</p><hr /><h2 id="feynman-diagrams-as-computational-graphs">4. Feynman diagrams as computational graphs</h2><p>Each Feynman diagram is:</p><ul><li>A directed acyclic graph (DAG)<br />
+</li><li><strong>Vertices</strong> = allowed transitions<br />
+</li><li><strong>Edges</strong> = composability constraints<br />
+</li><li><strong>Weights</strong> = amplitudes derived from aggregation statistics</li></ul><p>Therefore, Feynman diagrams are native objects in our computational universe; graphical representations of allowed compositions. We are not using Feynman diagrams metaphorically; our ontology almost requires them..</p><hr /><h2 id="why-transitions-are-verbs-is-technically-precise">5. Why “transitions are verbs” is technically precise</h2><p>In our framework:</p><ul><li><strong>Nouns (particles)</strong> correspond to stabilized, self-reinforcing patterns of transitions<br />
+</li><li><strong>Verbs (transitions)</strong> are the ontological primitives<br />
+</li><li><strong>Grammar (symmetries, conservation laws)</strong> defines the rules of composability</li></ul><p>This mirrors the structure of interaction Lagrangians:</p><ul><li>They constrain which transitions may compose<br />
+</li><li>Rather than postulating which objects “exist”</li></ul><p>Thus, when we say <em>“transitions are verbs”</em>, we are making a precise technical claim:</p><blockquote><p>The fundamental ontology is <strong>morphism-first</strong>, not object-first.</p></blockquote><p>This stance aligns naturally with category-theoretic and process-based formalisms.</p><hr /><h2 id="what-this-framework-buys-us">6. What this framework buys us</h2><ol type="1"><li><p><strong>No particle mysticism</strong><br />
+No confusion about what a “virtual particle” really is.</p></li><li><p><strong>Natural handling of off-shell processes</strong><br />
+Aggregations that do not register as interfaces are allowed.</p></li><li><p><strong>Computational clarity</strong><br />
+Diagrams are executable composition graphs.</p></li><li><p><strong>Scale independence</strong><br />
+The same language applies from Planck-scale physics to cosmology.</p></li></ol>
+</main>
+
+<!-- Optional post-content -->
+
+<!-- Inline CSS patch for Pandoc wrapper flex issues -->
+<style>
+/* Force nav flex alignment */
+body nav,
+main nav {
+  display: flex !important;
+  justify-content: flex-start !important;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+nav h3 {
+  margin-right: 1em;
+}
+</style>
+
+</body>
+</html>
