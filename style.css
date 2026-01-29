@@ -24,7 +24,7 @@ nav.toc {
   border-right: 1px solid #ddd;
   overflow-y: auto;
 
-  position: sticky    /* no sticky, no surprises */
+  position: fixed   /* no sticky, no surprises */
 
   font-family: "Georgia", "Times New Roman", Times, serif;
   font-size: 16px;
