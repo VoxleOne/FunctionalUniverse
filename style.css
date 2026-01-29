@@ -1,0 +1,15 @@
+.layout {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+nav[role="doc-toc"] {
+  width: 260px;
+  background: #eee;
+}
+
+main {
+  flex: 1;
+  background: #fff;
+}
