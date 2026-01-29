@@ -13,7 +13,12 @@
    Table of Contents (left sidebar)
    ========================================================= */
 nav[role="doc-toc"] {
-    flex: none;
+    flex: 0 0 260px;       /* do not grow, do not shrink, fixed width */
+    width: 260px;          /* lock exact width */
+    min-width: 260px;      /* prevent shrinkage */
+    max-width: 260px;      /* prevent expansion */
+    align-self: flex-start; /* prevent parent stretch from overriding */
+
     padding: 2rem 1.5rem;
     border-right: 1px solid #ddd;
     overflow-y: auto;
@@ -23,9 +28,9 @@ nav[role="doc-toc"] {
     font-family: "Georgia", "Times New Roman", Times, serif;
     font-size: 16px;
     line-height: 1.6;
-
     background-color: #fafafa;
 }
+
 
 nav[role="doc-toc"] > ul {
     list-style: none;
