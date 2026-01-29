@@ -26,12 +26,12 @@ main {
 
 nav[role="doc-toc"] {
   /* Updated alignment for TOC */
-  alignment: center; /* Example change, adjust as needed */
+  text-align: center; /* Example change, adjust as needed */
 }
 
 .mjx-container {
   /* Optimized MathJax styles */
   margin: 0;
   padding: 0;
-  font-size: inherit; // Ensure consistent font size
+  font-size: inherit; /* Ensure consistent font size */
 }
