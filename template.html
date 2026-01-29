@@ -1,89 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
-  <meta charset="utf-8">
-  <title>Functional Universe</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>$title$</title>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Optional metadata -->
+<meta name="author" content="Minute Man" >
+<meta name="keywords" content="$keywords$">
 
-  <!-- MathJax configuration -->
-  <script>
-    window.MathJax = {
-      tex: {
-        inlineMath: [['$', '$']],
-        displayMath: [['$$', '$$']]
-      },
-      svg: {
-        fontCache: 'global'
-      }
-    };
-  </script>
+<!-- Your CSS -->
+<link rel="stylesheet" href="style.css" />
 
-  <!-- MathJax loader -->
-  <script defer
-    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
-  </script>
+<!-- MathJax -->
 
-  <style>
-    body {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-      font-family: serif;
-      line-height: 1.6;
-    }
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
 
-    h1, h2 {
-      font-family: sans-serif;
-    }
-
-    math {
-      font-size: 1em;
-    }
-  </style>
+$for(header-includes)$
+$header-includes$
+$endfor$
 </head>
 
 <body>
+<header id="title-block-header">
+  $if(title)$<h1 class="title">$title$</h1>$endif$
+</header>
 
-  <h1>Functional Universe</h1>
+$if(toc)$
+<nav role="doc-toc">
+  $table-of-contents$
+</nav>
+$endif$
 
-  <p>
-    We consider a sequence of states $(f_n)$ and define a successor function
-    $T(f_n)$ generating the next state.
-  </p>
+<main>
+$body$
+</main>
 
-  <p>
-    Formally, the evolution operator is given by
-    $\mathcal{O}_n = \mathcal{O}(f_n)$,
-    where each application advances the system discretely.
-  </p>
+$for(include-after)$
+$include-after$
+$endfor$
+</body>
+</html>
 
-  <p>
-    The proper time increment is written as $(\mathrm{d}\tau)$, and the initial
-    epoch occurs at ($t_0 \sim 3.8 \times 10^5$ years).
-  </p>
-
-  <h2>Example</h2>
-
-  <p>
-    A familiar physical relation appears naturally:
-    $E = mc^2$.
-  </p>
-
-  <p>
-    A representative integral:
-  </p>
-
-  $$
-  \int_0^\infty e^{-x} \, \mathrm{d}x = 1
-  $$
-
-  <hr>
-
-  <p style="font-size: 0.9em; color: #555;">
-    Mathematical notation is rendered using MathJax.
-    For best results, modern browsers are recommended.
-  </p>
 
 </body>
 </html>
