@@ -26,24 +26,6 @@ nav[role="doc-toc"] {
     background-color: #fafafa;
 }
 
-nav[role="doc-toc"] > ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav[role="doc-toc"] li {
-    margin-bottom: 0.5em;
-}
-
-nav[role="doc-toc"] a {
-    color: #1a0dab;
-    text-decoration: none;
-}
-
-nav[role="doc-toc"] a:hover {
-    text-decoration: underline;
-}
 
 /* =========================================================
    Horizontal TOC (index page)
