@@ -12,46 +12,19 @@
 /* =========================================================
    Table of Contents (left sidebar)
    ========================================================= */
-
-nav.toc {
-  width: 260px;        /* HARD size */
-  max-width: 260px;
-  min-width: 260px;
-
-  height: 100vh;       /* full viewport height */
-
-  padding: 2rem 1.5rem;
-  border-right: 1px solid #ddd;
-  overflow-y: auto;
-
-  position: fixed   /* no sticky, no surprises */
-
-  font-family: "Georgia", "Times New Roman", Times, serif;
-  font-size: 16px;
-  line-height: 1.6;
-  background-color: #fafafa;
-
-  box-sizing: border-box;
-}
-
-
 nav[role="doc-toc"] {
-  flex: 0 0 260px;
-  max-width: 260px;
-  width: 260px;          /* explicit, defensive */
-  box-sizing: border-box;
+    flex: 0 0 260px;
+    padding: 2rem 1.5rem;
+    border-right: 1px solid #ddd;
+    overflow-y: auto;
+    position: sticky;
+    top: 0;
 
-  padding: 2rem 1.5rem;
-  border-right: 1px solid #ddd;
-  overflow-y: auto;
+    font-family: "Georgia", "Times New Roman", Times, serif;
+    font-size: 16px;
+    line-height: 1.6;
 
-  position: sticky;
-  top: 0;
-
-  font-family: "Georgia", "Times New Roman", Times, serif;
-  font-size: 16px;
-  line-height: 1.6;
-  background-color: #fafafa;
+    background-color: #fafafa;
 }
 
 nav[role="doc-toc"] > ul {
@@ -74,39 +47,13 @@ nav[role="doc-toc"] a:hover {
 }
 
 /* =========================================================
-   Horizontal TOC (index page)
-   ========================================================= */
-body.toc-horizontal .layout {
-    flex-direction: column;
-}
-
-body.toc-horizontal nav[role="doc-toc"] {
-    position: static;
-    width: 100%;
-    border-right: none;
-    border-bottom: 1px solid #ddd;
-    padding: 1rem 2rem;
-    background-color: #ffffff;
-}
-
-body.toc-horizontal nav[role="doc-toc"] > ul {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-}
-
-body.toc-horizontal nav[role="doc-toc"] li {
-    margin: 0;
-}
-
-/* =========================================================
    Main content area
    ========================================================= */
 main {
     flex: 1;
     padding: 2rem 3rem;
 
-    max-width: 820px;          /* ← reading-width constraint */
+    max-width: 820px;          /* reading-width constraint */
     margin: 0 auto;            /* center content column */
 
     font-family: "Georgia", "Times New Roman", Times, serif;
@@ -242,6 +189,3 @@ hr {
         padding: 1.5rem;
     }
 }
-
-
-
