@@ -13,7 +13,7 @@
    Table of Contents (left sidebar)
    ========================================================= */
 nav[role="doc-toc"] {
-    flex: 0 0 260px;
+    flex: none;
     padding: 2rem 1.5rem;
     border-right: 1px solid #ddd;
     overflow-y: auto;
