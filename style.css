@@ -12,6 +12,29 @@
 /* =========================================================
    Table of Contents (left sidebar)
    ========================================================= */
+
+nav.toc {
+  width: 260px;        /* HARD size */
+  max-width: 260px;
+  min-width: 260px;
+
+  height: 100vh;       /* full viewport height */
+
+  padding: 2rem 1.5rem;
+  border-right: 1px solid #ddd;
+  overflow-y: auto;
+
+  position: static;    /* no sticky, no surprises */
+
+  font-family: "Georgia", "Times New Roman", Times, serif;
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: #fafafa;
+
+  box-sizing: border-box;
+}
+
+
 nav[role="doc-toc"] {
   flex: 0 0 260px;
   max-width: 260px;
