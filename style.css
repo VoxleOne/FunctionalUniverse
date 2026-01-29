@@ -102,7 +102,18 @@ code, pre {
 mjx-container {
     font-size: 1em !important;
     line-height: 1.5 !important;
-    display: inline-block;
+}
+
+/* Display math */
+mjx-container[display="true"] {
+  display: block;
+  margin: 1em 0;
+  text-align: left;   /* this is the key */
+}
+
+/* Inline math */
+mjx-container:not([display="true"]) {
+  display: inline;
 }
 
 /* --- Figures, Images, Graphs --- */
