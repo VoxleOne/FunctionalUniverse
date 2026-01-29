@@ -17,7 +17,6 @@ nav[role="doc-toc"] {
     padding: 2rem 1.5rem;
     border-right: 1px solid #ddd;
     overflow-y: auto;
-    position: sticky;
     top: 0;
 
     font-family: "Georgia", "Times New Roman", Times, serif;
