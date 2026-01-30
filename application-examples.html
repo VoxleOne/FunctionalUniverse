@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>application-examples</title>
+
+<!-- Optional metadata -->
+<meta name="author" content="Minute Man" >
+<meta name="keywords" content="">
+
+<!-- Your CSS -->
+<link rel="stylesheet" href="style.css" />
+
+<!-- MathJax -->
+
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+
+</head>
+
+<body>
+<header id="title-block-header">
+  <h1 class="title">application-examples</h1>
+</header>
+
+<nav role="doc-toc" style="width: 200px;">
+  <ul><li><a href="#application-examples">1. Application Examples</a><ul><li><a href="#successor-function-and-cmb-cooling-example">1.1. Successor Function and CMB Cooling Example</a></li><li><a href="#emergent-time-and-transition-duration">4.2.. Emergent Time and Transition Duration</a></li></ul></li><li><a href="#references">References</a></li></ul>
+</nav>
+
+<main>
+<h2 id="application-examples">1. Application Examples</h2><h3 id="successor-function-and-cmb-cooling-example">1.1. Successor Function and CMB Cooling Example</h3><p>We can test this framework with a quantitative cosmology example: the cooling of the Cosmic Microwave Background (CMB) after recombination.</p><ol type="1"><li><strong>Physical Model</strong><br />
+After recombination <span class="math inline">\((\(t_0 \sim 3.8 \times 10^5\) years)\)</span>, the CMB temperature evolves as:</li></ol><p><span class="math display">\[
+T(t) \propto a(t)^{-1}
+\]</span></p><p>where <span class="math inline">\((a(t))\)</span> is the scale factor. In a matter-dominated universe::</p><p><span class="math display">\[
+a(t) \propto t^{2/3} \quad \implies \quad T(t) \propto t^{-2/3}.
+\]</span></p><ol start="2" type="1"><li><strong>Discrete State Steps</strong><br />
+We define discrete states corresponding to successor function applications:</li></ol><p><span class="math display">\[
+f_n = T_n = T(f_n)
+\]</span></p><p>and choose each state step <span class="math inline">\((n \to n+1)\)</span> to correspond to a <strong>doubling of cosmic time</strong>:</p><p><span class="math display">\[
+t_n = t_0 \cdot 2^n.
+\]</span></p><p>Then the temperature at state <span class="math inline">\((n)\)</span> is:</p><p><span class="math display">\[
+T_n = T_0 \cdot 2^{-2n/3}.
+\]</span></p><p>Each state transition is associated with a <strong>minimal transition duration</strong> <span class="math inline">\((d\tau)\)</span>, reflecting the time it takes for physical changes to occur in the system.</p><ol start="3" type="1"><li><strong>Initial Conditions</strong></li></ol><p><span class="math display">\[
+T_0 = 3000\,\text{K}, \quad t_0 = 3.8\times 10^5\,\text{yr}.
+\]</span></p><ol start="4" type="1"><li><strong>Successor Function (Discrete Update)</strong></li></ol><p><span class="math display">\[
+f_{n+1} = T(f_n) = f_n \cdot 2^{-2/3} \approx 0.63 f_n
+\]</span></p><ul><li>The factor <span class="math inline">\((0.63 \approx 2^{-2/3})\)</span> comes from the <strong>matter-dominated temperature scaling</strong>, not an arbitrary number.<br />
+</li><li>Each step represents one <strong>compositional application</strong> of the successor function.<br />
+</li><li>Each application takes a <strong>finite duration</strong> <span class="math inline">\((d\tau)\)</span>.</li></ul><ol start="5" type="1"><li><strong>First Few States</strong></li></ol><table><thead><tr class="header"><th>n</th><th>t_n (yr)</th><th>T_n (K)</th></tr></thead><tbody><tr class="odd"><td>0</td><td>3.80×10⁵</td><td>3000</td></tr><tr class="even"><td>1</td><td>7.60×10⁵</td><td>1890</td></tr><tr class="odd"><td>2</td><td>1.52×10⁶</td><td>1190</td></tr><tr class="even"><td>3</td><td>3.04×10⁶</td><td>750</td></tr><tr class="odd"><td>4</td><td>6.08×10⁶</td><td>470</td></tr><tr class="even"><td>5</td><td>1.22×10⁷</td><td>296</td></tr><tr class="odd"><td>…</td><td>…</td><td>…</td></tr><tr class="even"><td>16</td><td>2.50×10¹⁰</td><td>1.9</td></tr></tbody></table><p>Observation: after ~16 compositional steps, the predicted temperature approaches the observed CMB temperature <span class="math inline">\((T_{\rm CMB} \approx 2.725)\)</span> K.</p><hr /><h3 id="emergent-time-and-transition-duration">4.2.. Emergent Time and Transition Duration</h3><ul><li>Each transition <span class="math inline">\((f_n \to _{n+1})\)</span> represents a physically meaningful change: any evolution of a quantum state into a distinguishable new state</li><li>Transitions are not instantaneou; they take a finite duration <span class="math inline">\((d\tau_n)\)</span>, reflecting the minimal physically allowed evolutio consistent with quantum mechanics and causality.</li><li>The accumulated transition durations along a worldline define operational proper time:</li></ul><p><span class="math display">\[
+\tau_{\rm worldline} = \sum_n d\tau_n
+\]</span></p><ul><li>This formalizes the idea that time is emergent; only <strong>composition and transition counting</strong> matter.<br />
+</li><li>In this view, <strong>time dilation</strong> arises naturally: systems moving relative to one another, or in different gravitational potentials, accumulate <strong>fewer or more internal transitions per global state</strong>, reproducing the predictions of relativity without invoking a fundamental time parameter.</li></ul><hr /><p><strong>Key Insights</strong></p><ol type="1"><li>The universe evolves <strong>compositionally</strong>, via repeated application of a successor function <span class="math inline">\((T)\)</span>.<br />
+</li><li>Church numeral analogy makes <strong>nested, history-dependent evolution</strong> intuitive.<br />
+</li><li>Each transition has a <strong>finite duration</strong> <span class="math inline">\((d\tau)\)</span>, giving rise to emergent <strong>proper time</strong>.<br />
+</li><li>Discrete functional evolution reproduces <strong>real cosmological observables</strong>, like the cooling of the CMB.<br />
+</li><li><strong>Time dilation</strong> and <strong>spacetime geometry</strong> naturally emerge from <strong>transition counting</strong> and compositional structure.</li></ol><hr /><h2 id="references">References</h2><ol type="1"><li>Margolus, N., &amp; Levitin, L. B. “The maximum speed of dynamical evolution.” <em>Physica D</em>, 1998.<br />
+</li><li>Peebles, P. J. E. <em>Principles of Physical Cosmology</em>, 1993.<br />
+</li><li>Sorkin, R. “Causal sets: Discrete gravity,” 2003.</li></ol>
+</main>
+
+</body>
+</html>
