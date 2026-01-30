@@ -6,6 +6,7 @@ Modeling the cosmos as a sequence of functional states. [See the entire concept]
 ## 1. Introduction
 
 Traditionally, physics treats time as a fundamental parameter: events unfold within a pre-existing temporal framework. Here, we explore an alternative:
+We propose a model in which the universe is not composed of objects evolving in time, but of states related by irreversible functional transitions. Time is not a fundamental parameter but an emergent ordering of these transitions. Causality is defined by composability, and physical laws describe constraints on allowable state transformations.
 
 - The universe is a **sequence of nested states**.  
 - **Time emerges** from the succession of states, rather than existing independently.  
