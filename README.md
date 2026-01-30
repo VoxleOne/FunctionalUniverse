@@ -1,6 +1,6 @@
 # The Universe as a Compositional Sequence of States
 
-Modeling the cosmos as a sequence of functional states. [See the entire concept](https://voxleone.github.io/FunctionalUniverse)
+Modeling the cosmos as a sequence of functional states. [See the entire concept](https://voxleone.github.io/FunctionalUniverse/)
 
 
 ## 1. Introduction
