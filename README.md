@@ -19,7 +19,7 @@ $$
 ---
 
 ### Axiom 1 — Functional Ontology
-The universe is a compositional structure of functions. What exists fundamentally are compositions of transitions, not states or objects. Formally:
+The universe is a compositional structure of functions. What exists fundamentally are compositions of transitions, not fixed states or objects. Formally:
 
 $$
 fi​:(Si​→Si+1​)↦(Si+1​→Si+2​) 
