@@ -115,7 +115,7 @@ $$
 
 ### 4.1. Successor Function and CMB Cooling Example
 
-We can test this framework with a quantitative cosmology example: the cooling of the Cosmic Microwave Background (CMB) after recombination.  
+We can test this framework with a coarse-grained quantitative cosmology example: the cooling of the Cosmic Microwave Background (CMB) after recombination.  
 
 1. **Physical Model**  
 After recombination $(\(t_0 \sim 3.8 \times 10^5\) years)$, the CMB temperature evolves as:
