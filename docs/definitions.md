@@ -96,7 +96,7 @@ $$
 
 ---
 
-### 4. **Proper Time $(d\Tau)$**
+### 4. **Proper Time $(d\tau)$**
 
 Proper time is **the measure of accumulated irreducible transitions along a causal chain**:
 
@@ -132,6 +132,7 @@ Formally, let
 $$
 \mathcal{A}(f_n) = {(T_i, w_i)}
 $$
+
 be the aggregation space associated with interface $f_n$.
 
 Multiple aggregation elements $T_i$ may contribute to the same committed transition $T^*$ if they:
@@ -141,6 +142,7 @@ Multiple aggregation elements $T_i$ may contribute to the same committed transit
 * and collectively produce a dominant effective weight (W^* \ge \Theta).
 
 The commitment operator then applies **once**:
+
 $$
 f_{n+1} = \mathcal{C}(\mathcal{A}(f_n)) = T^*(f_n)
 $$
@@ -187,6 +189,8 @@ Observers emerge naturally from interaction. Any particle or subsystem becomes a
 
 Observation is thus an emergent property of interaction, not a privileged fundamental entity.
 
+---
+
 ### 9. **Vacuum**
 
 The **vacuum** is an aggregation field :
@@ -197,9 +201,9 @@ The **vacuum** is an aggregation field :
 
 ---
 
-### 10. **Entropy Increment ($(\Delta S)$)**
+### 10. **Entropy Increment $(\Delta S)$**
 
-Each committed transition carries a minimum **entropy increment** $(\Delta S_{\min} > 0)$:
+Each committed transition carries a minimum **entropy increment** $(Delta S_{\min} > 0)$:
 
 * Records the irreversibility of the transition
 * Establishes the arrow of time
@@ -209,7 +213,7 @@ Each committed transition carries a minimum **entropy increment** $(\Delta S_{\m
 
 ### 11. **Causal Cone**
 
-The **causal cone** of a transition is the set of all transitions that are composable with it, respecting Axiom 5 (maximum causal speed $(c)$):
+The **causal cone** of a transition is the set of all transitions that are composable with it, respecting Axiom 5 (maximum causal speed $c$):
 
 * Defines emergent locality
 * Prevents superluminal influence
@@ -234,7 +238,7 @@ $$
 
 A **Feynman diagram** corresponds to a functional universe process:
 
-* Left: prior committed transitions $(f_{n-1}$)
+* Left: prior committed transitions $f_{n-1}$
 * Middle: aggregation field $( \mathcal{A}(d\tau) )$ representing virtual superpositions
 * Right: committed outcome $(f_n)$
 
