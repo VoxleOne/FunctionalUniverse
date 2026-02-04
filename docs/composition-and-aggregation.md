@@ -96,6 +96,8 @@ When commitment occurs:
 
 This boundary explains why most quantum possibilities never become real, while a few leave lasting imprints on reality.
 
+[See>> History Entry Mechanism](history-entry-mechanism.md)
+
 ---
 
 ### 5. Hawking Radiation as a Canonical Example
