@@ -39,7 +39,7 @@ $$
 
 ---
 
-Or, using **functional notation** (with transitions $(f)$ and states $(S)$):
+Or, using **functional notation** (with transitions $(f)$ and states $(S)$:
 
 $$
 S_{\text{in}}
