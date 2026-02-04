@@ -1,6 +1,5 @@
 ---
-title:"Feynman Diagrams in the FU"
-
+title: "Feynman Diagrams in the FU"
 ---
 
 # **Feynman Diagrams in the Functional Universe**
@@ -80,11 +79,13 @@ Transition composition is naturally expressed:
 $$
 f_{n+1} = \mathcal{C}(d\tau) \circ f_n
 $$
+
 Subsequent transitions chain to form worldlines:
 
 $$
 f_n \xrightarrow{d\tau_n} f_{n+1} \xrightarrow{d\tau_{n+1}} f_{n+2} \xrightarrow{\dots}
 $$
+
 Each $d\tau$ satisfies the **minimum proper-time axiom**, guaranteeing discrete, irreversible causal steps.
 
 ---
