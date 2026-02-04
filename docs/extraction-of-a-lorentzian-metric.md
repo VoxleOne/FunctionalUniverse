@@ -41,10 +41,12 @@ Define:
 
 * A timelike curve = a maximal chain of composable events
 * Proper time along a chain:
-  $$
-  \tau(\gamma) = \sum_{e_i \in \gamma} w(e_i)
-  $$
-  where $( w(e_i) )$ is transition cost or latency.
+
+$$
+\tau(\gamma) = \sum_{e_i \in \gamma} w(e_i)
+$$
+
+where $(w(e_i))$ is transition cost or latency.
 
 This yields:
 
@@ -58,11 +60,13 @@ Here, $( g_{tt} )$ emerges as **path-weight density**.
 ## 13. Spatial Distance from Neighborhood Structure
 
 Define the causal neighborhood of an event $( e )$:
+
 $$
 N(e) = { e' : e' \text{ is spacelike to } e \text{ and shares past/future} }
 $$
 
 Define spatial distance between spacelike events $( e_i, e_j )$:
+
 $$
 d(e_i, e_j) \sim \text{minimum transitions needed to correlate them}
 $$
@@ -105,9 +109,11 @@ After coarse-graining a dense region $( R )$:
 * Light cones = causal reach boundary
 
 Define:
+
 $$
 ds^2 = -(\alpha, d\tau)^2 + \beta, d\ell^2
 $$
+
 where:
 
 * $( d\tau )$: chain-weight difference
