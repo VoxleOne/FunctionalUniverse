@@ -92,7 +92,7 @@ Key properties:
 * Commitment is *relative*, not absolute.
 * The rule is nonlinear and many-to-one.
 
-Thus, history is created under conditions of **sufficient dominance**, not perfect certainty.
+Thus, history is created when one candidate transition achieves sufficient effective weight relative to the aggregation ensemble, not when certainty reaches unity.
 
 ---
 
