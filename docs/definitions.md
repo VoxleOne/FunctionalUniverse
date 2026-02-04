@@ -1,7 +1,6 @@
 ---
 title: "Definitions"
 ---
----
 
 # **Functional Universe: Core Definitions**
 
