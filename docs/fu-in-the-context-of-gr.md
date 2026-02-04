@@ -162,7 +162,7 @@ Exactly as in GR. Our contribution is not formal substitution, but explanation:
 | Proper time is geometric  | Proper time is computational               |
 | Metric is fundamental     | Metric is emergent                         |
 | Curvature is primitive    | Curvature = commitment-density gradient    |
-| Time dilation unexplained | Time dilation = altered commitment mapping |
+| Time dilation = metric    | Time dilation = altered commitment mapping |
 
 GR remains intact; its interpretation becomes causal and physical.
 
