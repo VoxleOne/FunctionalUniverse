@@ -1,8 +1,3 @@
----
-title: "Matter and Energy"
----
----
-
 # Matter and Energy in the Functional Universe
 
 ## 1. Introduction
@@ -24,17 +19,21 @@ Formally:
 Let $T(t)$ be the set of transitions at time $(t)$. A **Standing Pattern of Transitions (SPT)** $P(t) \subseteq T(t)$ satisfies:
 
 1. Spatial/structural location remains approximately constant over successive intervals:
-   $$
-   \forall k \in [1, n], \quad \text{dist}(\text{loc}(\tau_{t+k d\tau}), \text{loc}(\tau_t)) < \epsilon
-   $$
-2. Transition outputs reinforce inputs of the next step: (C(\tau_{t+k d\tau}) = 1)
-3. The pattern persists under normal perturbations: (p_\text{stability} \approx 1)
+
+
+$$
+\forall k \in [1, n], \quad \text{dist}(\text{loc}(\tau_{t+k d\tau}), \text{loc}(\tau_t)) < \epsilon
+$$
+   
+4. Transition outputs reinforce inputs of the next step: $(C(\tau_{t+k d\tau}) = 1)$
+5. The pattern persists under normal perturbations: $(p_\text{stability} \approx 1)$
 
 Matter can then be identified as the **maximally self-reinforcing SPT**, where the sum of committed contributions is maximal:
 
 $$
-\text{Matter} = \operatorname{argmax}*{P(t) \subseteq T(t)} \sum*{\tau \in P} C(\tau)
+\text{Matter} = \arg\max_{P(t) \subseteq T(t)} \sum_{\tau \in P} C(\tau)
 $$
+
 
 ## 3. Entropy Increment
 
