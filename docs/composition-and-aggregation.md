@@ -17,9 +17,11 @@ Within the Functional Universe framework, a fundamental distinction must be draw
 **Function composition** is the primitive operation by which the universe evolves.
 
 Formally, composition has the structure
+
 $$
 (f \circ g)(x) = f(g(x)),
 $$
+
 which enforces:
 
 * an ordered input–output relation,
@@ -50,9 +52,11 @@ In short: **composition creates facts**.
 **Function aggregation** is a fundamentally different operation. It represents the coexistence of multiple potential functional outcomes without selecting a unique successor.
 
 Schematically, aggregation may be written as
+
 $$
 \mathcal{A} = \bigoplus_i f_i,
 $$
+
 where:
 
 * no total order is imposed,
@@ -107,12 +111,13 @@ Hawking radiation provides a clear physical realization of this distinction. Nea
 ------
 
 $$
-\mathcal{A}(\text{horizon}) = \left\{ 
-\left(T_i, w_i\right) \;\middle|\; 
-T_i : \text{vacuum} \to \text{particle–antiparticle pair},\; w_i \in [0,1] 
-\right\}, 
+\mathcal{A}(\text{horizon}) = \{ 
+(T_i, w_i) \;|\; 
+T_i : \text{vacuum} \to \text{particle--antiparticle pair}, \; w_i \in [0,1]
+\}, 
 \qquad \sum_i w_i = 1
 $$
+
 
 Most of these aggregated transitions **never commit**, i.e., they do not compose into the historical state:
 
