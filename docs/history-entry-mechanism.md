@@ -10,9 +10,9 @@ Let $\mathcal{F}$ denote the space of *interface states* $f_n$, where each $f_n$
 
 We distinguish two ontological layers:
 
-1. **Aggregation layer** ( \mathcal{A} ):
+1. **Aggregation layer** $\mathcal{A}$:
    Encodes admissible *possible* successor transitions from a given interface state.
-2. **Composition layer** ( \mathcal{C} ):
+2. **Composition layer** $\mathcal{C}$:
    Encodes *actual* committed transitions, producing unique successor states and advancing proper time.
 
 This distinction is foundational. Aggregation concerns *potentiality*; composition concerns *history*. No element of aggregation is, by itself, part of spacetime, causal order, or observable reality.
@@ -24,9 +24,13 @@ This distinction is foundational. Aggregation concerns *potentiality*; compositi
 Given an interface state $f_n$, define its aggregation space as a weighted ensemble of admissible successor transitions:
 
 $$
-\mathcal{A}(f_n) = \left\{ \left( T_i , w_i \right) \;\middle|\; T_i : f_n \to f_{n+1}^{(i)},\; w_i \in \mathbb{R}^+ \right\}
+\mathcal{A}(f_n) = \{ ( T_i , w_i ) \;|\; T_i : f_n \to f_{n+1}^{(i)},\; w_i \in \mathbb{R}^+ \}
 $$
+
+
+
 with normalization
+
 $$
 \sum_i w_i = 1.
 $$
@@ -48,9 +52,11 @@ Crucially:
 ## **3. Effective Commitment Weight**
 
 Aggregation weights alone do not determine historical entry. We therefore define an **effective commitment weight**:
+
 $$
 w_i \cdot D_i \cdot B_i,
 $$
+
 where:
 
 * $w_i$ is the intrinsic aggregation weight,
@@ -71,7 +77,9 @@ Importantly, $B_i$ does **not** inject new energy or information; it reshapes th
 ## **4. The Commitment Threshold**
 
 Define a **commitment threshold** $\Theta > 0$.
+
 A transition $T_k$ becomes historically real - commits - iff:
+
 $$
 W_k \ge \Theta
 \quad \text{and} \quad
@@ -91,9 +99,11 @@ Thus, history is created under conditions of **sufficient dominance**, not perfe
 ## **5. The Composition Operator**
 
 Define the composition operator:
+
 $$
 \mathcal{C} : \mathcal{A}(f_n) \longrightarrow f_{n+1},
 $$
+
 $$
 [
 \mathcal{C} : \mathcal{A}(f_n) \longrightarrow f_{n+1}  \mathcal{C} (\mathcal{A}(f_n)) = f_{n+1}^{(k)}, \qquad k = \arg\max_i W_i
@@ -111,6 +121,7 @@ Once applied, only $f_{n+1}$ persists as a causal interface, and all non-selecte
 ## **6. Proper Time as a Consequence of Commitment**
 
 Each committed transition contributes a minimum increment of proper time:
+
 $$
 \Delta \tau_k = \tau_{\min}\,\phi(W_k)
 $$
@@ -121,6 +132,7 @@ where:
 * $\phi$ is a monotone function encoding transition cost or latency.
 
 Total proper time along a worldline $\gamma$ is:
+
 $$
 \tau(\gamma) = \sum_{k \in \gamma} \Delta \tau_k.
 $$
@@ -138,6 +150,7 @@ $$
 $$
 
 Formally, the bias functional updates as:
+
 $$
 B_i^{(n+1)} = \mathcal{B}(f_{n+1}, T_i).
 $$
@@ -155,6 +168,7 @@ Composition constrains future aggregation; aggregation never revises committed h
 ## **8. Emergence of History**
 
 The universe evolves as a discrete compositional sequence:
+
 $$
 f_0
 \xrightarrow{\mathcal{C}}
@@ -170,9 +184,7 @@ Only the sequence ${ f_n }$ constitutes history. All aggregation spaces remain p
 Compactly:
 
 $$
-\text{History}
-=
-\mathcal{C} \circ \mathcal{A}.
+\text{History} = \mathcal{C} \circ \mathcal{A}.
 $$
 
 ---
