@@ -40,7 +40,7 @@ Consequence
 - States are interfaces, not ontological primitives
 
 ### Axiom 2 — Minimal Transition Duration
-There exists a universal, nonzero lower bound $d\Tau_min$ on the duration of any irreducible physical transition. 
+There exists a universal, nonzero lower bound $d\tau_{min}$ on the duration of any irreducible physical transition. 
 
 _The value of this bound is an empirical parameter to be constrained by observation, not fixed by the axioms themselves._
 
@@ -104,6 +104,7 @@ is a **successor function** generating the next state.
 We can represent sequential states and their compositions using concepts analogous to Church numerals in lambda calculus. Each state can be seen as a function of the previous state, and iteration over these functions mirrors the counting structure of Church numerals. 
 
 **Disclaimer**: this analogy is purely mathematical and conceptual. It is not a claim about metaphysics, consciousness, or the universe literally being a computer. The purpose is to illustrate formal compositional structure in state evolution, not to make ontological or physical assertions about reality.
+
 $$
 f_0 = \{\}, \quad f_1 = \{f_0\}, \quad f_2 = \{f_0, f_1\}, \quad \dots
 $$
