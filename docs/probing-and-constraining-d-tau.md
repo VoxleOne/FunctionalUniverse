@@ -52,7 +52,7 @@ We need to look where physics already probes extreme temporal granularity:
 
 * High-energy gamma rays, neutrinos, or cosmic rays traveling cosmological distances might reveal tiny **time-of-flight differences** if there is a fundamental transition granularity.
 * Look for: systematic deviations from Lorentz invariance or dispersion that can’t be explained by standard physics.
-* Translation: a **long baseline amplifier** of tiny (d\tau_{\min}).
+* Translation: a **long baseline amplifier** of tiny $d\tau_{\min}$.
 
 ---
 
@@ -83,25 +83,28 @@ Evidence for $d\tau_{\min} > 0$ could be:
 ## Causal Lower Bound Estimate on Transition Duration
 
 A crude but physically grounded estimate of a minimal transition duration follows directly from causality. If a physical interaction is localized within an effective region of linear size ( \ell ), then it cannot complete in less time than is required for causal influence to traverse that region. This implies the bound
+
 $$
 d\tau ;\gtrsim; \frac{\ell}{c}.
 $$
+
 This constraint is independent of dynamics or model details; it follows solely from locality and finite signal speed.
 
-While interaction regions are not directly observable, **scattering cross sections** provide an indirect measure of their effective spatial extent. A cross section ( \sigma ) has dimensions of area and can be associated with an effective interaction radius ( \ell_{\mathrm{eff}} ) via
+While interaction regions are not directly observable, **scattering cross sections** provide an indirect measure of their effective spatial extent. A cross section $\sigma$ has dimensions of area and can be associated with an effective interaction radius $\ell_{\mathrm{eff}}$ via
+
 $$
 \ell_{\mathrm{eff}} ;\sim; \sqrt{\frac{\sigma}{\pi}}.
 $$
+
 Substituting into the causal bound yields
+
 $$
 d\tau_{\min} ;\gtrsim; \frac{1}{c},\sqrt{\frac{\sigma}{\pi}}.
 $$
+
 This provides a brute-force causal estimate of the minimum duration required for a scattering event to complete. Crucially, this bound does not rely on quantum gravity, discreteness assumptions, or speculative microphysics. It follows directly from causality applied to localized interactions.
 
 A **universal lower bound** on interaction duration would manifest experimentally as a **saturation effect**: beyond some energy scale, increasing energy would continue to modify cross sections but would no longer reduce the effective duration of causal transitions.
-
----
-All good — thanks for the clarification. Here is a **clean, MathJax-ready, highbrow but readable formulation** of that *Feynman / FU interpretation*, formatted exactly the way you’d want it in a technical blog or preprint.
 
 ---
 
@@ -120,6 +123,7 @@ The **left vertex** $f_n$ marks the **beginning of a transition**. It is the **i
 $$
 f_n
 $$
+
 This vertex does not represent an instantaneous event, but the **entry boundary** of a finite-duration process.
 
 ---
@@ -136,6 +140,7 @@ f_n \xrightarrow{, d\tau ,} f_{n+1},
 d\tau = \int_{\lambda_{\text{init}}}^{\lambda_{\text{commit}}}
 \mathcal{A}!\left(\text{possible transitions}\right), d\lambda
 $$
+
 where:
 
 * $\lambda$ is a **pre-temporal ordering parameter** in aggregation space,
@@ -207,16 +212,20 @@ If locality is real, **both limits follow inevitably**.
 
 What special relativity did to velocity, this principle proposes to do to interaction rate.
 
-Special relativity established that increasing energy does **not** increase causal speed beyond the invariant limit ( c ):
+Special relativity established that increasing energy does **not** increase causal speed beyond the invariant limit $(c)$:
+
 $$
 \lim_{E \to \infty} v(E) ;=; c.
 $$
+
 Energy ceases to buy faster-than-light motion.
 
 Analogously, we propose that increasing energy does **not** reduce interaction duration beyond a finite minimum:
+
 $$
 \lim_{E \to \infty} d\tau(E) ;=; d\tau_{\min} ;\neq; 0.
 $$
+
 Energy ceases to buy instantaneous causation.
 
 In both cases, unbounded energy does not produce unbounded rates. Instead, nature enforces saturation at a causal limit.
