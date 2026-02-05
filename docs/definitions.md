@@ -27,7 +27,6 @@ $$
 
 The process begins with an initial state $(f_n)$ interaction. Evolves through an aggregation layer, representing all potential contributions (virtual processes). Ends with a commitment $(f_{n+1})$, which selects one outcome, produces entropy, and advances proper time along the worldline.
 
----
 
 $$
 \underbrace{\text{Initial interaction}}*{\text{left vertex}}
