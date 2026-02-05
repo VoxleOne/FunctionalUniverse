@@ -90,9 +90,11 @@ We will write functions as triples $((\mathrm{dom},,\mathrm{map},,\mathrm{cod}))
 **Formal set-theoretic version:**
 
 Define:
+
 $$
 F \subseteq {, f : S\times S \mid f : S_i \to S_{i+1},}
 $$
+
 Such that:
 
 $$
@@ -101,6 +103,7 @@ f: S_i\to S_{i+1}
 $$
 
 and composition is closed:
+
 $$
 \forall f,g\in F:\ \mathrm{cod}(f)=\mathrm{dom}(g)\ \Rightarrow\ g\circ f\in F
 $$
@@ -116,11 +119,13 @@ $$
 **Formal version:**
 
 Let
+
 $$
 d\tau_{\min} \in \mathbb{R}^{+},\quad 0<d\tau_{\min}<\infty
 $$
 
 With:
+
 $$
 \forall f\in F:\ \tau(f)\geq d\tau_{\min}
 $$
@@ -128,6 +133,7 @@ $$
 Where $(\tau(f))$ is the proper-time duration assigned to transition$(f)$.
 
 Constraints:
+
 $$
 d\tau_{\min}\text{ is empirical (parameter), not logically determined by the axioms.}
 $$
@@ -141,11 +147,13 @@ $$
 **Formal version:**
 
 Let
+
 $$
 \Delta S_{\min}\in \mathbb{R}^{+},\quad 0<\Delta S_{\min}<\infty
 $$
 
 Such that:
+
 $$
 \forall f\in F:\ \Delta S(f)\geq \Delta S_{\min}
 $$
@@ -153,6 +161,7 @@ $$
 Where $(\Delta S(f))$ is the entropy produced by transition $(f)$.
 
 This enforces **irreversibility**:
+
 $$
 \Delta S(f)>0
 $$
@@ -166,9 +175,11 @@ $$
 **Formal version:**
 
 Define:
+
 $$
 \prec, \subseteq F\times F
 $$
+
 as a partial order:
 
 $$
@@ -180,6 +191,7 @@ and $(\prec)$ is transitive, antisymmetric, and acyclic:
 $$
 f\prec g\ \wedge\ g\prec h\ \Rightarrow\ f\prec h
 $$
+
 $$
 f\prec g\ \wedge\ g\prec f\ \Rightarrow\ f=g
 $$
@@ -274,6 +286,7 @@ $$
 $$
 f\prec g\iff\exists h\in F:\ g=h\circ f,
 $$
+
 $$
 f\prec g\wedge g\prec h\Rightarrow f\prec h.
 $$
