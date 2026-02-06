@@ -47,16 +47,16 @@ This documentation presents the conceptual foundations, mathematical structures,
 
 ## Conclusion
 
-- [conclusion](conclusion.md)
+- [Conclusion](conclusion.md)
 
 ## References
 
-- [references](references.md)
+- [References](references.md)
   
 ## Annex
 
-- [application examples](application-examples.md)
-- [critical appraisal of the fu](critical-appraisal-of-the-fu.md)
-- [stress test thought experiment](stress-test-thought-experiment.md)
+- [Application Examples](application-examples.md)
+- [Critical Appraisal of the FU](critical-appraisal-of-the-fu.md)
+- [Stress Test Thought Experiment](stress-test-thought-experiment.md)
 
 
