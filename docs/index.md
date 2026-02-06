@@ -11,7 +11,7 @@ keywords:
 
 # Functional Universe - Index
 
-An Interpretive Framework and a [Computational Model](document.md)
+An Interpretive Framework and a **[Computational Model](https://github.com/VoxleOne/FunctionalUniverse)**
 
 Functional Universe (FU) is a formal framework for modeling physical reality as functional state evolution, integrating sequential composition with simultaneous aggregation.
 It provides a unified language for causal dynamics, background effects, and recoverability across classical physics, general relativity, and quantum field theory.
