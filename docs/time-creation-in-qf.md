@@ -1,6 +1,8 @@
 ---
-title: "Time Creation in Quantum Field Theory"
+title: "Time Creation in the Quantum Field"
 ---
+
+# Time Creation in the Quantum Field
 
 In the Functional Universe framework, quantum evolution does not presuppose time as a fundamental parameter.  Instead, Schrödinger evolution is interpreted as pre-temporal: it governs the evolution of quantum possibilities prior to any irreversible commitment.
 
