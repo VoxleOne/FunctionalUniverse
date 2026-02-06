@@ -43,7 +43,8 @@ This documentation presents the conceptual foundations, mathematical structures,
   - [Feynman Diagrams in FU](feynman-diagrams-in-fu.md)
   - [Vacuum Energy as Persistent Aggregation](vacuum-energy-as-persistent-aggregation.md)
   - [Where Schrödinger Equation Lives](where-schrodinger-equation-lives.md)
-  - [Probing and Constraining $d\tau_{min}$](probing-and-constraining-d-tau.md)
+  - [Probing and Constraining $d\tau_{min}$](probing-and constraining-d-tau.md)
+  - [Time Creation in the Quantum Field](time-creation-in-the-quantum-field.md)
 
 ## Conclusion
 
