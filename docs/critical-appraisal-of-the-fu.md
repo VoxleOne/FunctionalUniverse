@@ -173,4 +173,3 @@ If these hold, FU offers a coherent and economical foundation for time, causalit
 If they fail, FU fails cleanly, by contradicting future empirical results rather than by dissolving into vagueness.
 
 ---
----
