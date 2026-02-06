@@ -69,6 +69,7 @@ d\tau \equiv dI_{\text{commit}} \quad \text{(measured in bits)}
 $$
 
 Using Landauer:
+
 $$
 dE \ge k_B T \ln 2 , d\tau
 $$
