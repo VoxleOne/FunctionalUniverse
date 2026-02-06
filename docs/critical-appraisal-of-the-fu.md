@@ -171,3 +171,6 @@ Its most exposed arguments are:
 If these hold, FU offers a coherent and economical foundation for time, causality, and spacetime without adding new primitives.
 
 If they fail, FU fails cleanly, by contradicting future empirical results rather than by dissolving into vagueness.
+
+---
+---
