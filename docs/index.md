@@ -20,14 +20,14 @@ This documentation presents the conceptual foundations, mathematical structures,
 
 ## Introduction
 
+- [Executive Summary](executive-symmary.md)
 - [Introduction](introduction.md)
-- [Executive Summary](executive-summary.md)
 
 ## Core Concepts
 
 - [Definitions](definitions.md)
 - [Methodology](methodology.md)
-- [Hybrid Functional Model](hybrid-functional-model.md)
+- [Dual-Layer Functional Model](hybrid-functional-model.md)
 - [Composition and Aggregation](composition-and-aggregation.md)
 - [History Entry Mechanism](history-entry-mechanism.md)
 
