@@ -52,7 +52,7 @@ This documentation presents the conceptual foundations, mathematical structures,
 ## References
 
 - [references](references.md)
-- 
+  
 ## Annex
 
 - [application examples](application-examples.md)
