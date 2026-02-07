@@ -5,6 +5,7 @@ title:"Where Schrodinger Equation Lives"
 # Where the Schrödinger equation lives (and why)
 
 In this framework the Schrödinger equation:
+
 $$
 i\hbar \frac{\partial}{\partial t},|\psi\rangle = \hat H |\psi\rangle
 $$
@@ -34,10 +35,13 @@ It lives squarely in **$\mathcal A$**.
 In Functional Universe language:
 
 * Schrödinger evolution updates
+  
 $$
   \mathcal A(f_n) ;\rightarrow; \mathcal A'(f_n)
 $$
+
 * Commitment applies
+* 
 $$
   f_{n+1} = \mathcal C(\mathcal A(f_n))
 $$
