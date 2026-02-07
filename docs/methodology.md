@@ -451,3 +451,4 @@ The methodology naturally extends to further experimental stages:
 
 > *The Functional Universe is explored as a formal generative experiment: starting from a small set of axioms, a coherent theoretical and computational structure emerges without contradiction. This demonstrates internal consistency and closure, establishing the framework as a viable candidate for further physical investigation, while remaining agnostic about empirical adequacy pending future work.
 
+---
