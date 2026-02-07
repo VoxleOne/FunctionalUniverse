@@ -213,8 +213,9 @@ Let $F$ be the set of committed transitions and let $\prec$ denote the causal (c
 Define the **causal graph distance** between two transitions $f,g \in F$ as:
 
 $$
-d_{\mathrm{graph}}(f,g) = \min\left\{\, n \;\middle|\; \exists\, f_0,\dots,f_n \in F \text{ such that } f_0=f,\ f_n=g,\ \text{and } f_i \prec f_{i+1} \right\}.
+d_{\mathrm{graph}}(f,g) =\min \{\, n \;\mid\; \exists\, f_0,\dots,f_n \in F \text{ such that } f_0=f,\ f_n=g,\ \text{and } f_i \prec f_{i+1} \,\}.
 $$
+
 
 Define the **accumulated proper time** along a causal chain from $f$ to $g$ as:
 
