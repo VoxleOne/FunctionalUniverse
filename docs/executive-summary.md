@@ -111,10 +111,6 @@ FU is **not**:
 
 ## Why This Matters
 
----
-title: "Executive Summary"
----
-
 FU offers a single structural language for addressing long-standing tensions in physics:
 
 * Why time is directional
