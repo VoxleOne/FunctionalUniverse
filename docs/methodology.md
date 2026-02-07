@@ -426,7 +426,7 @@ The Functional Universe is presented as:
 
 ## 9. Scientific status of the result
 
-At its current stage, the Functional Universe occupies the status of:
+At its current stage, the Functional Universe aims to occupy the status of:
 
 * A coherent foundational proposal,
 * A formal ontology with computational realization,
