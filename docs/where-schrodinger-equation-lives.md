@@ -41,7 +41,7 @@ $$
 $$
 
 * Commitment applies
-* 
+ 
 $$
   f_{n+1} = \mathcal C(\mathcal A(f_n))
 $$
