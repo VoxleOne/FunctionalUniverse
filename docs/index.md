@@ -6,8 +6,7 @@ keywords:
   - feynman diagrams
   - aggregation
   - compositional systems
-  - canonical: https://voxleone.github.io/FunctionalUniverse/
----
+ ---
 
 # Functional Universe - Index
 
@@ -20,7 +19,7 @@ This documentation presents the conceptual foundations, mathematical structures,
 
 ## Introduction
 
-- [Executive Summary](executive-symmary.md)
+- [Executive Summary](executive-summary.md)
 - [Introduction](introduction.md)
 
 ## Core Concepts
