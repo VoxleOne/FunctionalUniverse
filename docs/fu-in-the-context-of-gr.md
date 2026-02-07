@@ -6,12 +6,12 @@ title: "FU in the Context of GR"
 
 ## 1. Reinterpreting Time in General Relativity (Without Breaking It)
 
-We do not replace the coordinate time $( t )$ in Einstein’s equations with proper time $( \tau )$. Instead, we reinterpret what **proper time already is** and what the **metric is actually measuring**. This move is fully compatible with General Relativity (GR) and does not alter its formal structure.
+We do not replace the coordinate time $(t)$ in Einstein’s equations with proper time $(\tau)$. Instead, we reinterpret what **proper time already is** and what the **metric is actually measuring**. This move is fully compatible with General Relativity (GR) and does not alter its formal structure.
 
 In GR:
 
-- Coordinate time $ ( t )$ is a gauge choice and has no direct physical meaning.
-- Proper time $( \tau )$ is what clocks measure along worldlines.
+- Coordinate time $(t)$ is a gauge choice and has no direct physical meaning.
+- Proper time $(\tau)$ is what clocks measure along worldlines.
 
 Our proposal aligns exactly with this structure. We do not introduce a new time variable; we give **proper time a deeper microphysical meaning**.
 
@@ -20,24 +20,27 @@ Our proposal aligns exactly with this structure. We do not introduce a new time 
 ## 2. Proper Time as Causal Commitment
 
 In standard GR, proper time is defined by:
+
 $$
 d\tau^2 = - g_{\mu\nu} , dx^\mu dx^\nu
 $$
 
 We reinterpret this as follows:
+
 $$
 d\tau ;;\longleftrightarrow;; \sum (\text{causally committed transitions along the path})
 $$
 
 In continuum form:
+
 $$
 d\tau = \rho(x), d\lambda
 $$
 
 where:
 
-- $ \rho(x) $ is the **local density / rate of causal commitment**
-- $ d\lambda $ is a **pre-temporal ordering parameter**, not time
+- $\rho(x)$ is the **local density / rate of causal commitment**
+- $d\lambda$ is a **pre-temporal ordering parameter**, not time
 
 This means:
 
@@ -67,8 +70,8 @@ contains **no explicit time variable**.
 
 It relates:
 
-- Geometry $( G_{\mu\nu} )$
-- To energy–momentum $( T_{\mu\nu} )$
+- Geometry $(G_{\mu\nu})$
+- To energy–momentum $(T_{\mu\nu})$
 
 Time enters GR only through:
 
@@ -247,7 +250,7 @@ Collapse is not time evolution; **Collapse is time creation.**
 
 ## 11. What $d\tau$ Encodes
 
-$( d\tau )$ is not duration.
+$(d\tau)$ is not duration.
 It is not a tick.
 It is not a parameter.
 
