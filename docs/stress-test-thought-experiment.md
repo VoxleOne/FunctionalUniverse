@@ -22,10 +22,9 @@ This is where serial models usually panic.
 Let $f_n$ be the prior committed interface (everything causally available before the detections).
 
 From $f_n$, aggregation produces **two independent aggregation basins**:
+
 $$
-[\mathcal A(f_n)
-=
-\mathcal A_A ;\cup; \mathcal A_B
+[\mathcal A(f_n) = \mathcal A_A ;\cup; \mathcal A_B
 $$
 
 Where:
@@ -50,6 +49,7 @@ Two commitments occur:
 $$
 \mathcal C_A : \mathcal A_A \rightarrow f_{A}
 $$
+
 $$
 \mathcal C_B : \mathcal A_B \rightarrow f_{B}
 $$
@@ -76,11 +76,13 @@ Serial composition requires:
 Both conditions are satisfied:
 
 **Worldline A:**
+
 $$
 \cdots \rightarrow f_{A-1} \xrightarrow{\mathcal C_A} f_A \rightarrow \cdots
 $$
 
 **Worldline B:**
+
 $$
 \cdots \rightarrow f_{B-1} \xrightarrow{\mathcal C_B} f_B \rightarrow \cdots
 $$
