@@ -130,7 +130,7 @@ $$
 \forall f\in F:\ \tau(f)\geq d\tau_{\min}
 $$
 
-Where $(\tau(f))$ is the proper-time duration assigned to transition$(f)$.
+Where $\tau(f)$ is the proper-time duration assigned to transition $(f)$.
 
 Constraints:
 
