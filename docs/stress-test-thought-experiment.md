@@ -150,7 +150,7 @@ Think of:
 * no shared write location
 * eventual synchronization via a merge operation
 
-No contradiction. No race condition. No global tick.
+No contradiction, race condition or global tick.
 
 ---
 
