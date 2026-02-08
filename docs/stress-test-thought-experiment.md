@@ -156,11 +156,11 @@ No contradiction, race condition or global tick.
 
 ## Final stress-test verdict
 
-✔ Serial composition survives simultaneous detector clicks
-✔ No branching histories
-✔ No global clock
-✔ No hidden parallel composition operator
-✔ Full compatibility with relativity
+- Serial composition survives simultaneous detector clicks
+- No branching histories
+- No global clock
+- No hidden parallel composition operator
+- Full compatibility with relativity
 
 And the key sentence that makes it all work:
 
