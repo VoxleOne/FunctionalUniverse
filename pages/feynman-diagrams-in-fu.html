@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>feynman-diagrams-in-fu</title>
+
+<!-- Optional metadata -->
+<meta name="author" content="Minute Man" >
+<meta name="keywords" content="feynman diagrams, direct acyclic graph, dag">
+
+<!-- Canonical URL -->
+<link rel="canonical" href="https://voxleone.github.io/FunctionalUniverse/feynman-diagrams-in-fu.html">
+
+
+<!-- CSS -->
+      <link rel="stylesheet" href="css/style.css" />
+  
+<!-- MathJax -->
+<script>
+window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$','$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      processEnvironments: true
+    },
+    svg: { fontCache: 'global' }
+  };
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+
+</head>
+
+<body>
+<a id="top"></a>
+<div class="layout">
+  <nav role="doc-toc">
+    <h2 class="toc-title">Contents</h2>
+    <ul><li><a href="#feynman-diagrams-in-the-functional-universe">Feynman Diagrams in the Functional Universe</a><ul><li><a href="#functional-interpretation-of-diagrams">Functional Interpretation of Diagrams</a></li><li><a href="#two-vertex-sine-wave-as-dtau-picture">Two-Vertex, Sine-Wave-as-<span class="math inline">\(d\tau\)</span> Picture</a></li><li><a href="#why-this-rearrangement">Why This Rearrangement</a></li><li><a href="#virtual-particles-as-aggregations">Virtual Particles as Aggregations</a></li><li><a href="#directed-acyclic-graph-dag-representation">Directed Acyclic Graph (DAG) Representation</a></li><li><a href="#summary">Summary</a></li></ul></li></ul>
+  </nav>
+   <!-- Main content -->
+  <main>
+    <h1 id="feynman-diagrams-in-the-functional-universe">Feynman Diagrams in the Functional Universe</h1><h2 id="functional-interpretation-of-diagrams">Functional Interpretation of Diagrams</h2><p>In the Functional Universe (FU), <strong>Feynman diagrams are not literal pictures of particles moving through spacetime</strong>, but rather <strong>compositional graphs of allowed transitions</strong>:</p><ul><li><strong>Vertices</strong> = bookends of a transition</li><li><strong>Internal lines</strong> = aggregation-mediated evolution <span class="math inline">\((\mathcal{A})\)</span></li><li><strong>External lines</strong> = stabilized patterns, i.e., successor interface states</li></ul><blockquote><p>Transitions are verbs; particles are stabilized nouns. The diagram depicts a <strong>process</strong>, not objects in motion.</p></blockquote><h2 id="two-vertex-sine-wave-as-dtau-picture">Two-Vertex, Sine-Wave-as-<span class="math inline">\(d\tau\)</span> Picture</h2><p>Consider a standard QFT process: an electron <span class="math inline">\((e^-)\)</span> and a positron <span class="math inline">\((e^+)\)</span> annihilate to produce a quark–antiquark pair. In FU terms:</p><ol type="1"><li><strong>Left vertex</strong>: input interface <span class="math inline">\((f_n)\)</span>, where the collision initiates possible interactions</li><li><strong>Internal line / sine wave</strong>: the <strong>transition itself</strong>, <span class="math inline">\((d\Tau)\)</span>, where aggregation explores multiple possibilities</li><li><strong>Right vertex</strong>: committed successor state <span class="math inline">\((f_{n+1}\)</span>), where proper time increments and a new interface is realized</li></ol><figure><img src="img/feynman-diagram-transition-w.png" title="Transition with aggregation and commitment" alt="" /><figcaption>Functional Universe transition diagram</figcaption></figure><ul><li><strong>Vertices</strong> are “ends” of the transition</li><li><strong>Sine line</strong> is the minimum-duration transition mandated by axiom 2 <span class="math inline">\((d\tau_{\min})\)</span></li><li><strong>Output quarks</strong> are <span class="math inline">\(f_{n+1}\)</span>, which will themselves rapidly participate in further transitions</li></ul><p>Formally, the transition is:</p><p><span class="math display">\[
+    f_n \xrightarrow{d\tau} f_{n+1}, \quad
+    d\tau = \int_{\lambda_{\rm init}}^{\lambda_{\rm commit}} \mathcal{A}(\text{possible transitions}), d\lambda
+    \]</span></p><ul><li><span class="math inline">\(\lambda\)</span> = pre-temporal ordering parameter in aggregation space</li><li><span class="math inline">\(\mathcal{A}\)</span> = aggregation of all potential functional evolutions</li><li>Proper time only accumulates at <strong>commitment</strong>, <span class="math inline">\(f_{n+1} = \mathcal{C}(d\tau)\)</span></li></ul><h2 id="why-this-rearrangement">Why This Rearrangement</h2><ol type="1"><li><strong>Corrects “wavy line as a particle” intuition</strong>: the internal line represents the evolving transition, not a physical photon.</li><li><strong>Makes minimum <span class="math inline">\(d\tau\)</span> explicit</strong>: the diagram becomes almost a picture of the process duration.</li><li><strong>Shows compositional nature</strong>: left vertex = input interface; right vertex = committed output; internal line = aggregation mediation.</li><li><strong>Emphasizes continuation</strong>: output quarks are <span class="math inline">\(f_{n+1}\)</span> but will immediately participate in subsequent transitions <span class="math inline">\((f_{n+2}, f_{n+3}, \dots)\)</span>, preserving causality and proper-time accumulation.</li></ol><h2 id="virtual-particles-as-aggregations">Virtual Particles as Aggregations</h2><p>Internal lines:</p><ul><li>Represent aggregation, <span class="math inline">\(\mathcal{A}\)</span>, not committed states</li><li>May interfere, recombine, or cancel</li><li>Become <strong>real only when composed</strong>, e.g., boundary conditions, decoherence, or interaction with external systems</li></ul><p>Thus a “virtual photon” is <strong>not a particle</strong>, but a <strong>phase of the transition</strong> mediating between input and output interfaces.</p><h2 id="directed-acyclic-graph-dag-representation">Directed Acyclic Graph (DAG) Representation</h2><p>Every Feynman diagram can be interpreted as a DAG of transitions:</p><ul><li><strong>Vertices</strong> = committed interfaces</li><li><strong>Edges</strong> = composability constraints (causal and symmetry rules)</li><li><strong>Weights</strong> = amplitudes derived from aggregation statistics</li></ul><p>Transition composition is naturally expressed:</p><p><span class="math display">\[
+    f_{n+1} = \mathcal{C}(d\tau) \circ f_n
+    \]</span></p><p>Subsequent transitions chain to form worldlines:</p><p><span class="math display">\[
+    f_n \xrightarrow{d\tau_n} f_{n+1} \xrightarrow{d\tau_{n+1}} f_{n+2} \xrightarrow{\dots}
+    \]</span></p><p>Each <span class="math inline">\(d\tau\)</span> satisfies the <strong>minimum proper-time axiom</strong>, guaranteeing discrete, irreversible causal steps.</p><h2 id="summary">Summary</h2><ul><li><strong>Vertices</strong> = input/output of transitions</li><li><strong>Internal lines</strong> = <span class="math inline">\(d\tau\)</span> transition exploring aggregation possibilities</li><li><strong>Output states</strong> = committed successor <span class="math inline">\(f_{n+1}\)</span></li><li><strong>Virtual particles</strong> = aggregation mediators, not independent entities</li><li><strong>Proper time</strong> accumulates only at commitment</li></ul><blockquote><p>Feynman diagrams are thus <strong>natural graphical representations of causal composition in the Functional Universe</strong>, directly reflecting the structure of reality as sequences of irreducible transitions.</p></blockquote><hr />
+  </main>
+<!--INSERIR LINKS | BACK | INDEX |-->
+</div>
+ 
+</body>
+</html>
