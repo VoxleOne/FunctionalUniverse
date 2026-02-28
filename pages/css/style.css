@@ -9,6 +9,7 @@
     margin: 2rem auto; /* center horizontally */
     padding: 0;
     gap: 2rem; /* space between TOC and main content */
+    background-color: #faf9f5;    
 }
 
 body {
