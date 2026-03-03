@@ -1,6 +1,6 @@
 # README for Functional Universe
 
-[See the repository page for the entire concept](https://github.com/VoxleOne/FunctionalUniverse/blob/main/docs/index.md)
+[See the repository pages for the entire concept](https://voxleone.github.io/FunctionalUniverse/)
 
 ## Recent Refactoring Changes
 
