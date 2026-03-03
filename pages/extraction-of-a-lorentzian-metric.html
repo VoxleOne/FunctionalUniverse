@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>extraction-of-a-lorentzian-metric</title>
+<title>Extraction of a Lorentzian Metric</title>
 
 <!-- Optional metadata -->
 <meta name="author" content="Minute Man" >
@@ -34,13 +34,12 @@ window.MathJax = {
 </head>
 
 <body>
-<a id="top"></a>
 <div class="layout">
-  <nav role="doc-toc">
+    <nav role="doc-toc">
     <h2 class="toc-title">Contents</h2>
     <ul><li><a href="#extraction-of-an-effective-lorentzian-metric">Extraction of an Effective Lorentzian Metric</a><ul><li><a href="#starting-assumptions-what-is-allowed">Starting Assumptions (What Is Allowed)</a></li><li><a href="#causal-order-without-geometry">Causal Order Without Geometry</a></li><li><a href="#proper-time-from-chain-weights">Proper Time from Chain Weights</a></li><li><a href="#spatial-distance-from-neighborhood-structure">Spatial Distance from Neighborhood Structure</a></li><li><a href="#emergent-dimensionality">Emergent Dimensionality</a></li><li><a href="#assembling-the-lorentzian-metric">Assembling the Lorentzian Metric</a></li><li><a href="#curvature-from-transition-density">Curvature from Transition Density</a></li><li><a href="#why-the-metric-must-be-lorentzian">Why the Metric Must Be Lorentzian</a></li><li><a href="#final-statement">Final Statement</a></li></ul></li></ul>
   </nav>
-   <!-- Main content -->
+     <!-- Main content -->
   <main>
     <h1 id="extraction-of-an-effective-lorentzian-metric">Extraction of an Effective Lorentzian Metric</h1><h2 id="starting-assumptions-what-is-allowed">Starting Assumptions (What Is Allowed)</h2><p>We assume only:</p><ul><li>Events = causally committed transitions</li><li>A directed acyclic graph (DAG)</li><li>No coordinates</li><li>No metric</li><li>No manifold</li></ul><p>Goal: recover an <strong>effective Lorentzian metric</strong> <span class="math inline">\((g_{\mu\nu} )\)</span> at large scales.</p><h2 id="causal-order-without-geometry">Causal Order Without Geometry</h2><p>From the DAG:</p><ul><li><span class="math inline">\(( e_i \prec e_j )\)</span> if there exists a directed causal path</li><li>If neither <span class="math inline">\(( e_i \prec e_j ) nor ( e_j \prec e_i )\)</span>, the events are spacelike</li></ul><p>This yields:</p><ul><li>Timelike relations</li><li>Spacelike relations</li><li>A lightlike boundary defined by maximal propagation speed</li></ul><p>Causal structure appears <strong>before</strong> metric structure, exactly as in GR.</p><h2 id="proper-time-from-chain-weights">Proper Time from Chain Weights</h2><p>Define:</p><ul><li><p>A timelike curve = a maximal chain of composable events</p></li><li><p>Proper time along a chain:</p><p><span class="math display">\[
     \tau(\gamma) = \sum_{e_i \in \gamma} w(e_i)
@@ -54,8 +53,12 @@ window.MathJax = {
     ds^2 = -(\alpha, d\tau)^2 + \beta, d\ell^2
     \]</span></p><p>where:</p><ul><li><span class="math inline">\(d\tau\)</span>: chain-weight difference</li><li><span class="math inline">\(d\ell\)</span>: neighborhood-distance difference</li><li><span class="math inline">\(\alpha, \beta\)</span>: functions of local transition density</li></ul><p>This yields:</p><ul><li>Lorentzian signature <span class="math inline">\((-,+,+,+)\)</span></li><li>Locally Minkowskian behavior in uniform regions</li></ul><h2 id="curvature-from-transition-density">Curvature from Transition Density</h2><p>Let <span class="math inline">\(\rho(e)\)</span> be the density of committed transitions.</p><p>Then:</p><ul><li>High <span class="math inline">\(\rho\)</span> ⇒ energy concentration</li><li>Paths bend toward high <span class="math inline">\(\rho\)</span></li><li>Spatial distances distort</li><li>Proper time extremization follows dense regions</li></ul><p>Curvature is therefore <strong>inhomogeneous commitment density</strong>.</p><p>In the continuum limit:</p><ul><li>Einstein’s equations emerge as an equation of state</li></ul><h2 id="why-the-metric-must-be-lorentzian">Why the Metric Must Be Lorentzian</h2><p>Lorentzian signature is forced, not chosen:</p><ul><li>DAG ⇒ no closed timelike curves</li><li>Partial order ⇒ time asymmetry</li><li>Finite propagation speed ⇒ light cones</li><li>One ordering direction, multiple adjacency directions</li></ul><p>Thus:</p><blockquote><p>Lorentzian geometry is the only consistent coarse-graining of causal commitment.</p></blockquote><h2 id="final-statement">Final Statement</h2><p>A Lorentzian metric emerges as the coarse-grained measure of path weights and neighborhood distances in a causal graph of committed transitions; curvature reflects spatial variation in transition density.</p><hr />
   </main>
-<!--INSERIR LINKS | BACK | INDEX |-->
+  
 </div>
- 
+  <p style="text-align: center;">
+   <a href="#">Top</a>
+   | 
+   <a href="/index.html">Index</a>
+ </p>
 </body>
 </html>
