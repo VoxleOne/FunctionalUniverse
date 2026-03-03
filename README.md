@@ -1,6 +1,6 @@
 # README for Functional Universe
 
-[See the repository pages for the entire concept](https://voxleone.github.io/FunctionalUniverse/)
+[See the main branch and repository pages for the entire concept](https://voxleone.github.io/FunctionalUniverse/)
 
 ## Recent Refactoring Changes
 
@@ -24,4 +24,3 @@ Enhancements have been made to the visualization tools, aiming to provide cleare
 
 ---
 
-These updates contribute significantly to the overall architecture of the Functional Universe project, ensuring we remain on the cutting edge of software design principles and efficient processing techniques.
