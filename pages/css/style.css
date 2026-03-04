@@ -9,7 +9,7 @@
     margin: 2rem auto; /* center horizontally */
     padding: 0;
     gap: 2rem; /* space between TOC and main content */
-    background-color: #f5faf9;
+    background-color: #faf9f5;
 }
 
 body {
@@ -26,7 +26,7 @@ nav[role="doc-toc"] {
     align-self: flex-start; /* prevents stretching in flex */
     padding: 2rem 1.5rem;
     border-right: 1px solid #ddd;
-    background-color: #f1faf7;
+    background-color: #f5faf9;
 }
 
 /* TOC title */
