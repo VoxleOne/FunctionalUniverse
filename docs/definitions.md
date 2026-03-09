@@ -69,6 +69,14 @@ Transitions are where indeterminacy lives: during the aggregation layer ${\mathc
 
 ---
 
+**Finite localization implies unavoidable state evolution. Because:**
+
+$$
+\Delta x \Delta p \ge \frac{\hbar}{2}
+$$
+
+So perfect stasis is impossible. This naturally leads to a process ontology.
+
 ### 2. **State $(S)$**
 
 * A state is a temporary, derived interface between transitions, not a fundamental entity.
