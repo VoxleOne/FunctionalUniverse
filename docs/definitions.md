@@ -21,7 +21,7 @@ $$
 * Can only influence causally compatible transitions (Axiom 4)
 
 
-![Functional Universe transition diagram](img/feynman-diagram-transition.png "Transition with aggregation and commitment")
+![Functional Universe transition diagram](/pages/img/feynman-diagram-transition.png "Transition with aggregation and commitment")
 
 
 
